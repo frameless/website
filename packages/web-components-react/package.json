@@ -1,16 +1,16 @@
 {
   "version": "1.0.0-alpha.0",
-  "author": "Community for NL Design System",
+  "author": "Frameless",
   "description": "React web components bundle based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@example/web-components-react",
+  "name": "@frameless/web-components-react",
   "keywords": [
-    "nl-design-system"
+    "frameless"
   ],
   "private": true,
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git"
+    "url": "git@github.com:nl-design-system/frameless.git"
   },
   "sideEffects": false,
   "scripts": {
@@ -28,7 +28,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@example/web-components-stencil": "workspace:*",
+    "@frameless/web-components-stencil": "workspace:*",
     "@types/node": "20.12.7",
     "@types/react": "18.2.75",
     "@types/react-dom": "18.2.24",

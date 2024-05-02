@@ -1,11 +1,11 @@
 {
   "version": "1.0.0-alpha.0",
-  "author": "Community for NL Design System",
-  "description": "Example design tokens",
+  "author": "Frameless",
+  "description": "Frameless design tokens",
   "license": "SEE LICENSE IN LICENSE.md",
-  "name": "@example/design-tokens",
+  "name": "@frameless/design-tokens",
   "keywords": [
-    "nl-design-system"
+    "frameless"
   ],
   "private": false,
   "publishConfig": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git"
+    "url": "git@github.com:frameless/website.git"
   },
   "scripts": {
     "clean": "rimraf dist/",

@@ -1,16 +1,16 @@
 {
   "version": "1.0.0-alpha.0",
-  "author": "Community for NL Design System",
+  "author": "Frameless",
   "description": "Storybook based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@example/storybook",
+  "name": "@frameless/storybook",
   "keywords": [
     "nl-design-system"
   ],
   "private": true,
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git"
+    "url": "git@github.com:frameless/website.git"
   },
   "scripts": {
     "build": "storybook build --output-dir dist/ --config-dir config/",
@@ -19,12 +19,10 @@
     "storybook": "storybook dev --config-dir config/ --port 6006"
   },
   "devDependencies": {
-    "@example/assets": "workspace:*",
-    "@example/components-css": "workspace:*",
-    "@example/design-tokens": "workspace:*",
-    "@example/font": "workspace:*",
-    "@example/web-components-react": "workspace:*",
-    "@example/web-components-stencil": "workspace:*",
+    "@frameless/assets": "workspace:*",
+    "@frameless/components-css": "workspace:*",
+    "@frameless/design-tokens": "workspace:*",
+    "@frameless/font": "workspace:*",
     "@storybook/addon-a11y": "8.0.9",
     "@storybook/addon-actions": "8.0.9",
     "@storybook/addon-docs": "8.0.9",

@@ -6,7 +6,7 @@
   "name": "@frameless/font",
   "main": "dist/index.css",
   "keywords": [
-    "frameless"
+    "nl-design-system"
   ],
   "private": true,
   "publishConfig": {

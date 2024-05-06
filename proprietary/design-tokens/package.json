@@ -5,7 +5,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "name": "@frameless/design-tokens",
   "keywords": [
-    "frameless"
+    "nl-design-system"
   ],
   "private": false,
   "publishConfig": {

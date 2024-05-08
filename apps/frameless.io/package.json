@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0-alpha.0",
+  "author": "Frameless",
+  "description": "Frameless.io website",
+  "license": "EUPL-1.2",
+  "name": "@frameless/frameless.io",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": true
+}

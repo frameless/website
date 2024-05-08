@@ -88,6 +88,8 @@ importers:
         specifier: 5.4.4
         version: 5.4.4
 
+  apps/frameless.io: {}
+
   packages/components-css: {}
 
   packages/components-react:
@@ -3048,7 +3050,7 @@ packages:
     resolution: {integrity: sha512-C/iR0tk7KSKGldibYIB9x8GtO/0Bd0I2mhOaDb8ucQL/bQVTmGoeREaFj64Z5+iCBRf3dQfed0CjJL7I8iTkiQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      postcss-selector-parser: 6.0.15
+      postcss-selector-parser: 6.0.16
     dev: true
 
   /@npmcli/run-script@6.0.2:
@@ -4609,12 +4611,6 @@ packages:
 
   /@types/node@18.18.14:
     resolution: {integrity: sha512-iSOeNeXYNYNLLOMDSVPvIFojclvMZ/HDY2dU17kUlcsOsSQETbWIslJbYLZgA+ox8g2XQwSHKTkght1a5X26lQ==}
-    dependencies:
-      undici-types: 5.26.5
-    dev: true
-
-  /@types/node@20.10.1:
-    resolution: {integrity: sha512-T2qwhjWwGH81vUEx4EXmBKsTJRXFXNZTL4v0gi01+zyBmCwzE6TyHszqX01m+QHTEq+EZNo13NeJIdEqf+Myrg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -7958,17 +7954,6 @@ packages:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
 
-  /fast-glob@3.3.0:
-    resolution: {integrity: sha512-ChDuvbOypPuNjO8yIDf36x7BlZX1smcUMTTcyoIjycexOxd6DFsKsg21qVBzEmr3G7fUKIRy2/psii+CIUt7FA==}
-    engines: {node: '>=8.6.0'}
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.5
-    dev: true
-
   /fast-glob@3.3.2:
     resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
     engines: {node: '>=8.6.0'}
@@ -8615,8 +8600,8 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.3.0
-      ignore: 5.3.0
+      fast-glob: 3.3.2
+      ignore: 5.3.1
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
@@ -8627,7 +8612,7 @@ packages:
     dependencies:
       '@sindresorhus/merge-streams': 2.3.0
       fast-glob: 3.3.2
-      ignore: 5.3.0
+      ignore: 5.3.1
       path-type: 5.0.0
       slash: 5.1.0
       unicorn-magic: 0.1.0
@@ -9879,7 +9864,7 @@ packages:
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
       '@types/jsdom': 20.0.1
-      '@types/node': 20.10.1
+      '@types/node': 20.12.7
       jest-mock: 29.7.0
       jest-util: 29.7.0
       jsdom: 20.0.3
@@ -13063,14 +13048,6 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /postcss-selector-parser@6.0.15:
-    resolution: {integrity: sha512-rEYkQOMUCEMhsKbK66tbEU9QVIxbhN18YiniAwA7XQYTVBqrBy+P2p5JcdqsHgKM2zWylp8d7J6eszocfds5Sw==}
-    engines: {node: '>=4'}
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
-    dev: true
-
   /postcss-selector-parser@6.0.16:
     resolution: {integrity: sha512-A0RVJrX+IUkVZbW3ClroRWurercFhieevHB38sr2+l9eUClMqome3LmEmnhlNy+5Mr2EYN6B2Kaw9wYdd+VHiw==}
     engines: {node: '>=4'}
@@ -15956,7 +15933,7 @@ packages:
   /vscode-json-languageservice@4.2.1:
     resolution: {integrity: sha512-xGmv9QIWs2H8obGbWg+sIPI/3/pFgj/5OWBhNzs00BkYQ9UaB2F6JJaGB/2/YOZJ3BvLXQTC4Q7muqU25QgAhA==}
     dependencies:
-      jsonc-parser: 3.2.0
+      jsonc-parser: 3.2.1
       vscode-languageserver-textdocument: 1.0.8
       vscode-languageserver-types: 3.17.3
       vscode-nls: 5.2.0
@@ -16268,7 +16245,7 @@ packages:
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
       imurmurhash: 0.1.4
-      signal-exit: 4.0.2
+      signal-exit: 4.1.0
     dev: true
 
   /write-json-file@5.0.0:

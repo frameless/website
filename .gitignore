@@ -10,6 +10,7 @@ build/
 coverage/
 dist/
 tmp/
+proprietary/design-tokens/src/generated
 
 # Ignore archives
 *.7z

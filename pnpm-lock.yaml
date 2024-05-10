@@ -149,6 +149,9 @@ importers:
       '@types/testing-library__jest-dom':
         specifier: 5.14.9
         version: 5.14.9
+      '@utrecht/component-library-react':
+        specifier: 3.0.1-alpha.34
+        version: 3.0.1-alpha.34(react-dom@18.2.0)(react@18.2.0)
       '@vitejs/plugin-react':
         specifier: 4.2.1
         version: 4.2.1(vite@5.2.8)
@@ -221,6 +224,9 @@ importers:
       '@frameless/components-css':
         specifier: workspace:*
         version: link:../components-css
+      '@frameless/components-react':
+        specifier: workspace:*
+        version: link:../components-react
       '@frameless/design-tokens':
         specifier: workspace:*
         version: link:../../proprietary/design-tokens
@@ -257,6 +263,9 @@ importers:
       '@types/react-dom':
         specifier: 18.2.24
         version: 18.2.24
+      '@utrecht/component-library-react':
+        specifier: 3.0.1-alpha.34
+        version: 3.0.1-alpha.34(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -4861,6 +4870,28 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
+  /@utrecht/component-library-react@3.0.1-alpha.34(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Ey0XDl8D2t8z8eFJ56Ha1QBXrxiqjXf0HKo/uPoKn4ElwPRnovDp2GmgySTGDMPXMBaLDr7oD9N0LePgg4cF+A==}
+    peerDependencies:
+      date-fns: ^2.30.0
+      react: '18'
+      react-dom: '18'
+      react-vega: ^7.6.0
+      vega: ^5.25.0
+    peerDependenciesMeta:
+      date-fns:
+        optional: true
+      react-vega:
+        optional: true
+      vega:
+        optional: true
+    dependencies:
+      clsx: 1.2.1
+      lodash.chunk: 4.2.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
   /@vitejs/plugin-react@4.2.1(vite@5.2.8):
     resolution: {integrity: sha512-oojO9IDc4nCUUi8qIR11KoQm0XFFLIwsRBwHRR4d/88IWghn1y6ckz/bJ8GHDCsYEJee8mDzqtJxh15/cisJNQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -6184,6 +6215,11 @@ packages:
   /clone@1.0.4:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
+    dev: true
+
+  /clsx@1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: true
 
   /clsx@2.1.0:
@@ -10556,6 +10592,10 @@ packages:
 
   /lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
+    dev: true
+
+  /lodash.chunk@4.2.0:
+    resolution: {integrity: sha512-ZzydJKfUHJwHa+hF5X66zLFCBrWn5GeF28OHEr4WVWtNDXlQ/IjWKPBiikqKo2ne0+v6JgCgJ0GzJp8k8bHC7w==}
     dev: true
 
   /lodash.debounce@4.0.8:

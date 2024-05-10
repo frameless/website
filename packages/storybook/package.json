@@ -21,6 +21,7 @@
   "devDependencies": {
     "@frameless/assets": "workspace:*",
     "@frameless/components-css": "workspace:*",
+    "@frameless/components-react": "workspace:*",
     "@frameless/design-tokens": "workspace:*",
     "@frameless/font": "workspace:*",
     "@storybook/addon-a11y": "8.0.9",
@@ -33,6 +34,7 @@
     "@storybook/react-vite": "8.0.9",
     "@types/react": "18.2.75",
     "@types/react-dom": "18.2.24",
+    "@utrecht/component-library-react": "3.0.1-alpha.34",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rimraf": "5.0.5",

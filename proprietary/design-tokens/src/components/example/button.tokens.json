@@ -1,8 +1,0 @@
-{
-  "frameless": {
-    "button": {
-      "background-color": { "value": "{frameless.color.blue.50}" },
-      "color": { "value": "{frameless.color.grey.100}" }
-    }
-  }
-}

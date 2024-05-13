@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-CKrituN3.js";import{useMDXComponents as s}from"./index-DSz_1G2r.js";import{M as r,e as a}from"./chunk-HLWAVYOI-YHo7jNhP.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-DXgpTwkX.js";import"../sb-preview/runtime.js";import"./react-18-Bym-zv4b.js";import"./index-DmJorfPC.js";const o=`<!-- @license CC0-1.0 -->
+import{j as e}from"./jsx-runtime-CKrituN3.js";import{useMDXComponents as s}from"./index-DSz_1G2r.js";import{M as r,e as a}from"./chunk-HLWAVYOI-CaBl1tMw.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-C238pw2C.js";import"../sb-preview/runtime.js";import"./react-18-Bym-zv4b.js";import"./extends-CCbyfPlC.js";import"./index-DmJorfPC.js";const o=`<!-- @license CC0-1.0 -->
 
 # NL Design System introductie
 
@@ -35,4 +35,4 @@ De POC is te vinden op:
 
 <http://github.com/nl-design-system>
 `;function t(n){return e.jsxs(e.Fragment,{children:[e.jsx(r,{title:"Frameless/Intro"}),`
-`,e.jsx(a,{children:o})]})}function h(n={}){const{wrapper:i}={...s(),...n.components};return i?e.jsx(i,{...n,children:e.jsx(t,{...n})}):t()}export{h as default};
+`,e.jsx(a,{children:o})]})}function j(n={}){const{wrapper:i}={...s(),...n.components};return i?e.jsx(i,{...n,children:e.jsx(t,{...n})}):t()}export{j as default};

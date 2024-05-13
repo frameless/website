@@ -744,7 +744,7 @@
       },
       "heading": {
         "color": {
-          "value": "{frameless.color.petrol.10}",
+          "value": "{utrecht.document.color}",
           "type": "color"
         },
         "font-family": {

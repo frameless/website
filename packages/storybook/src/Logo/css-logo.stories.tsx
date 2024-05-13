@@ -1,1 +1,0 @@
-// CSS Logo component story

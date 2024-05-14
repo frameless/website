@@ -23,11 +23,6 @@ const meta = {
   },
   tags: ['autodocs'],
   parameters: {
-    bugs: 'https://github.com/nl-design-system/rotterdam/labels/component%2Fparagraph',
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/ZWSC4gCrOXRUR9UX3aoZ8x/?node-id=415-12136',
-    },
     docs: {
       description: {},
     },
@@ -42,7 +37,7 @@ export const Default: Story = {
   name: 'Paragraph',
   args: {
     children:
-      'Een geveltuin aanleggen is leuk om te doen, de straat knapt ervan op en uw huis blijft in de zomer koeler. Meer groen maakt de stad ook beter bestand tegen klimaatveranderingen en wateroverlast en is goed voor insecten en vogels. Een geveltuin is een strook planten tegen de gevel van een woning. Ze zijn vooral geschikt in straten waar de huizen geen voortuin hebben. Eén enkele klimplant, stokroos of zonnebloem maakt het straatbeeld al gezelliger, maar andere planten kunnen natuurlijk ook. U kiest zelf.',
+      'Herbruikbare componenten onafhankelijk van huisstijl, daar mag je ons voor wakker maken! Frameless heeft al aan meerdere white-label design systems mogen werken en is trots op onze bijdrage aan NL Design System. Wij helpen ook graag als technisch partner bij het bouwen van toegankelijke en gebruiksvriendelijke web applicaties.',
   },
 };
 export const LeadParagraph: Story = {

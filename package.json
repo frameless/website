@@ -10,7 +10,7 @@
   "private": true,
   "engines": {
     "node": "^20",
-    "pnpm": "^8 || ^9"
+    "pnpm": "^9"
   },
   "workspaces": [
     "./apps/*",
@@ -76,5 +76,6 @@
   },
   "dependencies": {
     "http-server": "14.1.1"
-  }
+  },
+  "packageManager": "pnpm@9.1.1"
 }

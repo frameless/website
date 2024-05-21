@@ -1,14 +1,16 @@
 /* @license CC0-1.0 */
 
-import '@frameless/components-css/logo/index.scss';
 import readme from '@frameless/components-css/logo/README.md?raw';
 import { Logo } from '@frameless/components-react/src/Logo';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta = {
-  title: 'CSS Component/Logo',
+import '@frameless/components-css/logo/index.scss';
 
-  id: 'css-logo',
+// adds Logo to Storybook
+const meta = {
+  title: 'React Component/Logo',
+
+  id: 'react-logo',
 
   component: Logo,
 
@@ -42,10 +44,13 @@ const meta = {
 
 export default meta;
 
+// defines that this (part of the) story is documentation
 type Story = StoryObj<typeof meta>;
 
+// adds Frameless Logo section to Logo in Storybook
 export const Default: Story = {
-  name: 'Frameless Logo',
+  name: 'Frameless Logo', // in sidenav shows Frameless logo below Docs
   args: {},
   parameters: {},
 };
+//

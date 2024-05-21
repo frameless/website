@@ -1,0 +1,19 @@
+.frameless-logo {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  inline-size: var(--frameless-size-2xl);
+  padding-block: var(--frameless-space-block-snail);
+  padding-inline: var(--frameless-space-inline-snail);
+}
+
+.frameless-logoimage__svg {
+  block-size: 50px;
+  inline-size: var(--frameless-size-md);
+}
+
+.frameless-logo__text {
+  font-family: var(--frameless-logo-text-font-family);
+  font-size: var(--frameless-typography-font-size-3xl);
+  inline-size: var(--frameless-size-xl);
+}

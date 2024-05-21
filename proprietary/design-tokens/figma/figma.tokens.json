@@ -3185,6 +3185,23 @@
       }
     }
   },
+  "components/logo": {
+    "utrecht": {
+      "logo": {
+        "max-block-size": {},
+        "max-inline-size": {},
+        "min-block-size": {},
+        "min-inline-size": {}
+      }
+    }
+  },
+  "components/logo-text": {
+    "frameless": {
+      "logo-text": {
+        "font-family": { "value": "{frameless.typography.font-family.secondary}" }
+      }
+    }
+  },
   "components/modal-dialog": {
     "todo": {
       "modal-dialog": {

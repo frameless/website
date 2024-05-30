@@ -3193,13 +3193,13 @@
         "min-block-size": {},
         "min-inline-size": {}
       }
-    }
-  },
-  "components/logo-text": {
+    },
     "frameless": {
       "logo-text": {
         "font-family": { "value": "{frameless.typography.font-family.secondary}" }
-      }
+      },
+      "logo-image": {},
+      "frameless-logo": {}
     }
   },
   "components/modal-dialog": {

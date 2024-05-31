@@ -21,7 +21,7 @@ const meta = {
     },
   },
   args: {
-    children: 'Opslaan en verder',
+    children: '',
   },
   tags: ['autodocs'],
   parameters: {

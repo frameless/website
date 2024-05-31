@@ -2081,37 +2081,15 @@
     }
   },
   "components/card": {
-    "utrecht": {
+    "frameless": {
       "card": {
         "border-radius": {
           "type": "borderRadius",
           "value": "8px"
         },
-        "body": {
-          "border-color": {
-            "value": "transparent",
-            "type": "color"
-          },
-          "border-width": {
-            "type": "borderWidth",
-            "value": "{frameless.border-width.lg}"
-          },
-          "padding-block-end": {
-            "value": "{frameless.space.block.rabbit}",
-            "type": "spacing"
-          },
-          "padding-block-start": {
-            "value": "{frameless.space.block.rabbit}",
-            "type": "spacing"
-          },
-          "padding-inline-end": {
-            "value": "{frameless.space.inline.mouse}",
-            "type": "spacing"
-          },
-          "padding-inline-start": {
-            "value": "{frameless.space.inline.mouse}",
-            "type": "spacing"
-          }
+        "background-color": {
+          "value": "{frameless.color.petrol.10}",
+          "type": "color"
         }
       }
     }

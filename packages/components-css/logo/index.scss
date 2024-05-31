@@ -1,14 +1,14 @@
-.frameless-logo {
+.frameless-logo__wrapper {
   align-items: center;
   display: flex;
   flex-direction: row;
-  inline-size: var(--frameless-size-2xl);
-  padding-block: var(--frameless-space-block-snail);
-  padding-inline: var(--frameless-space-inline-snail);
+  inline-size: var(--frameless-logo-wrapper-inline-size);
+  padding-block: var(--frameless-logo-wrapper-padding-block);
+  padding-inline: var(--frameless-logo-wrapper-padding-inline);
 }
 
 .frameless-logo__text {
   font-family: var(--frameless-logo-text-font-family);
-  font-size: var(--frameless-typography-font-size-3xl);
-  inline-size: var(--frameless-size-xl);
+  font-size: var(--frameless-logo-text-font-size);
+  text-transform: uppercase;
 }

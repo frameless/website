@@ -30,6 +30,10 @@
           "4xl": {
             "value": "48px",
             "type": "fontSizes"
+          },
+          "logo": {
+            "value": "60px",
+            "type": "fontSizes"
           }
         },
         "line-height": {
@@ -66,7 +70,7 @@
             "type": "fontFamilies"
           },
           "secondary": {
-            "value": "Oswald",
+            "value": "Oswald, sans-serif",
             "type": "fontFamilies",
             "description": "Used for the Frameless logo"
           }
@@ -3196,10 +3200,16 @@
     },
     "frameless": {
       "logo-text": {
-        "font-family": { "value": "{frameless.typography.font-family.secondary}" }
+        "font-family": { "value": "{frameless.typography.font-family.secondary}" },
+        "font-size": { "value": "{frameless.typography.font-size.logo}" },
+        "font-weight": { "value": "{frameless.typography.font-weight.normal}" }
       },
       "logo-image": {},
-      "frameless-logo": {}
+      "logo-wrapper": {
+        "inline-size": { "value": "{frameless.space.inline.snail}" },
+        "padding-block": { "value": "{frameless.space.block.snail}" },
+        "padding-inline": { "value": "{frameless.space.inline.snail}" }
+      }
     }
   },
   "components/modal-dialog": {

@@ -1,4 +1,4 @@
-import { Heading1, Paragraph } from '@utrecht/component-library-react';
+import { Heading3, Paragraph } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import { HTMLAttributes, PropsWithChildren } from 'react';
 import '@frameless/components-css/card/index.scss';
@@ -9,16 +9,13 @@ interface CardProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const Card = ({ background, children, className, ...restProps }: PropsWithChildren<CardProps>) => (
-  <div {...restProps} className={clsx(['frameless-card-test'], background, ['card--background'], className)}>
+  <div {...restProps} className={clsx(['frameless-card-test'], background, ['card-background'], className)}>
     {children}
-    <Heading1>Design Systems</Heading1>
-    <Paragraph>
-      Herbruikbare componenten onafhankelijk van huisstijl, daar mag je ons voor wakker maken! Frameless heeft al aan
-      meerdere white-label design systems mogen werken en is trots op onze bijdrage aan NL Design System.
-    </Paragraph>
+    <Heading3></Heading3>
+    <Paragraph></Paragraph>
   </div>
 );
 
 export const CardContent = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => (
-  <div className={clsx(['frameless-card-content'])} {...props} />
+  <div className={clsx(['frameless-card-content'])} {...props}></div>
 );

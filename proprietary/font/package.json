@@ -18,5 +18,8 @@
   "repository": {
     "type": "git+ssh",
     "url": "git@github.com:frameless/website.git"
+  },
+  "dependencies": {
+    "@fontsource/fira-sans": "5.0.20"
   }
 }

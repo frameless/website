@@ -11,8 +11,11 @@ interface CardProps extends HTMLAttributes<HTMLElement> {
 export const Card = ({ background, children, className, ...restProps }: PropsWithChildren<CardProps>) => (
   <div {...restProps} className={clsx(['frameless-card-test'], background, ['card-background'], className)}>
     {children}
-    <Heading3></Heading3>
-    <Paragraph></Paragraph>
+    <Heading3>Design Systems</Heading3>
+    <Paragraph>
+      Herbruikbare componenten onafhankelijk van huisstijl, daar mag je ons voor wakker maken! Frameless heeft al aan
+      meerdere white-label design systems mogen werken en is trots op onze bijdrage aan NL Design System.
+    </Paragraph>
   </div>
 );
 

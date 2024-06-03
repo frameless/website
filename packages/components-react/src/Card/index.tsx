@@ -9,7 +9,7 @@ interface CardProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const Card = ({ background, children, className, ...restProps }: PropsWithChildren<CardProps>) => (
-  <div {...restProps} className={clsx(['frameless-card-test'], background, ['card-background'], className)}>
+  <div {...restProps} className={clsx(['frameless-card'], background, ['frameless-card-background'], className)}>
     {children}
     <Heading3>Design Systems</Heading3>
     <Paragraph>
@@ -19,6 +19,6 @@ export const Card = ({ background, children, className, ...restProps }: PropsWit
   </div>
 );
 
-export const CardContent = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => (
-  <div className={clsx(['frameless-card-content'])} {...props}></div>
-);
+// export const CardContent = (props: PropsWithChildren<HTMLAttributes<HTMLElement>>) => (
+//   <div className={clsx(['frameless-card-content'])} {...props}></div>
+// );

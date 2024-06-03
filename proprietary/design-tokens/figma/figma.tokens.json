@@ -2083,14 +2083,13 @@
   "components/card": {
     "frameless": {
       "card": {
-        "border-radius": {
-          "type": "borderRadius",
-          "value": "8px"
-        },
-        "background-color": {
-          "value": "{frameless.color.petrol.10}",
-          "type": "color"
-        }
+        "border-radius": { "value": "{frameless.border-radius.sm}" },
+        "background-color": { "value": "{frameless.color.petrol.95}" },
+        "inline-size": { "value": "{frameless.space.inline.snail}" },
+        "padding-block": { "value": "{frameless.space.block.snail}" },
+        "padding-inline": { "value": "{frameless.space.inline.snail}" },
+        "margin-block-start": { "value": "{frameless.space.block.rabbit}" },
+        "font-family": { "value": "{frameless.typography.font-family.secondary}" }
       }
     }
   },

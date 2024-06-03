@@ -7,6 +7,15 @@ const preview: Preview = {
   parameters: {
     controls: { expanded: false },
     options: { panelPosition: 'right' },
+    html: {
+      root: '.frameless-theme',
+      prettier: {
+        tabWidth: 4,
+        useTabs: false,
+        htmlWhitespaceSensitivity: 'strict',
+        bracketSameLine: true,
+      },
+    },
   },
   decorators: [ParametersArgsDecorator],
 };

@@ -30,10 +30,6 @@
           "4xl": {
             "value": "48px",
             "type": "fontSizes"
-          },
-          "logo": {
-            "value": "60px",
-            "type": "fontSizes"
           }
         },
         "line-height": {
@@ -68,11 +64,6 @@
           "primary": {
             "value": "'Fira Sans', Helvetica, Arial, sans-serif",
             "type": "fontFamilies"
-          },
-          "secondary": {
-            "value": "Oswald, sans-serif",
-            "type": "fontFamilies",
-            "description": "Used for the Frameless logo"
           }
         }
       },
@@ -3192,7 +3183,7 @@
   "components/logo": {
     "utrecht": {
       "logo": {
-        "max-block-size": {},
+        "max-block-size": { "value": "", "comment": "" },
         "max-inline-size": {},
         "min-block-size": {},
         "min-inline-size": {}
@@ -3200,8 +3191,8 @@
     },
     "frameless": {
       "logo-text": {
-        "font-family": { "value": "{frameless.typography.font-family.secondary}" },
-        "font-size": { "value": "{frameless.typography.font-size.logo}" },
+        "font-family": { "value": "{frameless.typography.font-family.primary}" },
+        "font-size": { "value": "{frameless.typography.font-size.4xl}" },
         "font-weight": { "value": "{frameless.typography.font-weight.normal}" }
       },
       "logo-image": {},

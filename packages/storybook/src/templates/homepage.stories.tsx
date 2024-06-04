@@ -11,6 +11,7 @@ import {
   UnorderedList,
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
+import './homepage.scss';
 
 const meta = {
   title: 'Template/Homepage',
@@ -24,7 +25,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: (args) => (
-    <div {...args} className="example-page" style={{ containerType: 'inline-size' }}>
+    <div {...args} className="frameless-page">
       {/* <Logo/> */}
 
       <section>

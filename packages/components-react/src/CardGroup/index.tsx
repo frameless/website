@@ -6,15 +6,7 @@ export type CardGroupProps = HTMLAttributes<HTMLDivElement>;
 
 export const CardGroup = forwardRef(
   ({ children, className, ...restProps }: PropsWithChildren<CardGroupProps>, ref: ForwardedRef<HTMLDivElement>) => (
-    <div
-      {...restProps}
-      ref={ref}
-      className={clsx(
-        'frameless-card-group',
-
-        className,
-      )}
-    >
+    <div {...restProps} ref={ref} className={clsx('frameless-card-group', className)}>
       {children}
     </div>
   ),

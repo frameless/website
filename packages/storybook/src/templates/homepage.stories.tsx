@@ -1,7 +1,7 @@
 /* @license CC0-1.0 */
 
-// import { Logo } from '';
-// import { Card, CardGroup } from '';
+// TODO: import { Logo } from '';
+// TODO: import { Card, CardGroup } from '';
 import { Meta, StoryObj } from '@storybook/react';
 import {
   Heading2,
@@ -32,9 +32,9 @@ export const Default: Story = {
         <Heading2>Wij Maken</Heading2>
 
         <div>
-          {/*CardGroup*/}
+          {/* //TODO: CardGroup*/}
           <div>
-            {/*Card*/}
+            {/* //TODO: Card*/}
             <Heading3>Design Systems</Heading3>
             <Paragraph>
               Herbruikbare componenten onafhankelijk van huisstijl, daar mag je ons voor wakker maken!
@@ -46,7 +46,7 @@ export const Default: Story = {
           </div>
 
           <div>
-            {/*Card*/}
+            {/* //TODO: Card*/}
             <Heading3>Front-ends</Heading3>
             <Paragraph>
               Wij helpen graag als technisch partner bij het bouwen van toegankelijke en gebruiksvriendelijke web

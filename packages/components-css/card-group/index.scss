@@ -1,6 +1,5 @@
 .frameless-card-group {
   border-radius: var(--frameless-border-radius-sm);
-  font-family: var(--frameless-typography-font-family-secondary);
-  margin-block-start: var(--frameless-card-margin-block-start);
-  padding-inline: var(--frameless-space-inline-snail);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

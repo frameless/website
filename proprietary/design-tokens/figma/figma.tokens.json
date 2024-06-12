@@ -2097,17 +2097,33 @@
   "components/card": {
     "frameless": {
       "card": {
-        "max-width": { "value": "{frameless.size.max-width.lg}" },
-        "border-radius": { "value": "{frameless.border-radius.md}" },
-        "background-color": { "value": "{frameless.color.petrol.95}" },
-        "box-shadow": { "value": "{frameless.box-shadow.lg}" },
-        "font-size": { "value": "{frameless.typography.font-size.xl}" },
-        "margin-block-end": { "value": "{frameless.space.block.rat}" },
-        "padding-block-start": { "value": "{frameless.space.block.snail}" },
-        "padding-block-end": { "value": "{frameless.space.block.snail}" },
-        "padding-inline-start": { "value": "{frameless.space.inline.rabbit}" },
-        "padding-inline-end": { "value": "{frameless.space.inline.rabbit}" },
-        "font-family": { "value": "{frameless.typography.font-family.primary}" }
+        "heading": {
+          "font-size": { "value": "{frameless.typography.font-size.xl}" },
+          "margin-block-end": { "value": "{frameless.space.block.rat}" }
+        },
+        "font": {
+          "font-family": { "value": "{frameless.typography.font-family.primary}" }
+        },
+        "color": {
+          "background-color": { "value": "{frameless.color.petrol.95}" }
+        },
+        "paragraph": {
+          "font-size": { "value": "{frameless.typography.font-size.sm}" },
+          "margin-block-end": { "value": "{frameless.space.block.rat}" }
+        },
+        "border": {
+          "border-radius": { "value": "{frameless.border-radius.md}" }
+        },
+        "spacing": {
+          "max-width": { "value": "{frameless.size.max-width.lg}" },
+          "padding-block-start": { "value": "{frameless.space.block.snail}" },
+          "padding-block-end": { "value": "{frameless.space.block.snail}" },
+          "padding-inline-start": { "value": "{frameless.space.inline.rabbit}" },
+          "padding-inline-end": { "value": "{frameless.space.inline.rabbit}" }
+        },
+        "line-height": {
+          "line-height": { "value": "{frameless.typography.line-height.sm}" }
+        }
       }
     }
   },

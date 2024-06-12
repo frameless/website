@@ -21,14 +21,8 @@
   }
 }
 
-@container (min-width: 450px) {
+@container (max-width: 400px) {
   .frameless-card {
-    background-color: red;
-  }
-}
-
-@container (max-width: 450px) {
-  .frameless-card {
-    background-color: blue;
+    --utrecht-paragraph-font-size: var(--frameless-card-paragraph-font-size);
   }
 }

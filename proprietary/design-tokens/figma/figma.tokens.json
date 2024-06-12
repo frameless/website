@@ -3182,12 +3182,7 @@
   },
   "components/logo": {
     "utrecht": {
-      "logo": {
-        "max-block-size": { "value": "", "comment": "" },
-        "max-inline-size": {},
-        "min-block-size": {},
-        "min-inline-size": {}
-      }
+      "logo": {}
     },
     "frameless": {
       "logo-text": {

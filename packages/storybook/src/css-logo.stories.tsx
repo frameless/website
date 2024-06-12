@@ -49,3 +49,10 @@ export const Default: Story = {
   args: {},
   parameters: {},
 };
+
+// om de 4 states van het logo te laten zien?
+export const LogoSmall: Story = {
+  name: 'Frameless Logo Small',
+  args: {},
+  parameters: {},
+};

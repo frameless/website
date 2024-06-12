@@ -1,4 +1,15 @@
 .frameless-card {
+  background-color: var(--frameless-card-background-color);
+  border-radius: var(--frameless-card-border-radius);
+  font-family: var(--frameless-card-font-family);
+  max-inline-size: var(--frameless-card-max-width);
+  padding-block-end: var(--frameless-card-padding-block-end);
+  padding-block-start: var(--frameless-card-padding-block-start);
+  padding-inline-end: var(--frameless-card-padding-inline-end);
+  padding-inline-start: var(--frameless-card-padding-inline-start);
+}
+
+.frameless-card__heading {
   --utrecht-heading-2-font-size: var(--frameless-card-font-size);
   --utrecht-heading-3-font-size: var(--frameless-card-font-size);
   --utrecht-heading-4-font-size: var(--frameless-card-font-size);
@@ -10,13 +21,4 @@
   --utrecht-heading-5-margin-block-end: var(--frameless-card-margin-block-end);
   --utrecht-heading-6-margin-block-end: var(--frameless-card-margin-block-end);
   --utrecht-space-around: 1;
-
-  background-color: var(--frameless-card-background-color);
-  border-radius: var(--frameless-card-border-radius);
-  font-family: var(--frameless-card-font-family);
-  max-inline-size: var(--frameless-card-max-width);
-  padding-block-end: var(--frameless-card-padding-block-end);
-  padding-block-start: var(--frameless-card-padding-block-start);
-  padding-inline-end: var(--frameless-card-padding-inline-end);
-  padding-inline-start: var(--frameless-card-padding-inline-start);
 }

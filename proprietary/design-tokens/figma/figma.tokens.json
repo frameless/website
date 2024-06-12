@@ -2102,7 +2102,7 @@
         "background-color": { "value": "{frameless.color.petrol.95}" },
         "box-shadow": { "value": "{frameless.box-shadow.lg}" },
         "font-size": { "value": "{frameless.typography.font-size.xl}" },
-        "margin-block-end": { "value": "{frameless.space.block.rabbit}" },
+        "margin-block-end": { "value": "{frameless.space.block.rat}" },
         "padding-block-start": { "value": "{frameless.space.block.snail}" },
         "padding-block-end": { "value": "{frameless.space.block.snail}" },
         "padding-inline-start": { "value": "{frameless.space.inline.rabbit}" },

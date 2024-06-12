@@ -1,12 +1,26 @@
+import { Heading } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import { HTMLAttributes, PropsWithChildren } from 'react';
 import '@frameless/components-css/card/index.scss';
 
-// ensures that this component is flexible, can accept standard HTML attributes, and conditionally applies styles based on the background prop.
-type CardProps = HTMLAttributes<HTMLElement>;
+interface CardProps extends HTMLAttributes<HTMLElement> {
+  heading?: string;
+  headingLevel?: number;
+}
 
-export const Card = ({ children, className, ...restProps }: PropsWithChildren<CardProps>) => (
+export const Card = ({
+  children,
+  heading,
+  headingLevel = 2,
+  className,
+  ...restProps
+}: PropsWithChildren<CardProps>) => (
   <div {...restProps} className={clsx('frameless-card', className)}>
-    {children}
+    {heading && (
+      <Heading className="frameless-card__heading" level={headingLevel}>
+        {heading}
+      </Heading>
+    )}
+    <div className="frameless-card__content">{children}</div>
   </div>
 );

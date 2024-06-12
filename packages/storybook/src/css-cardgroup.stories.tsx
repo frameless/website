@@ -5,7 +5,7 @@ import readme from '@frameless/components-css/card-group/README.md?raw';
 import { Card } from '@frameless/components-react/src/Card';
 import { CardGroup } from '@frameless/components-react/src/CardGroup';
 import type { Meta, StoryObj } from '@storybook/react';
-import { Heading3, Paragraph } from '@utrecht/component-library-react';
+import { Paragraph } from '@utrecht/component-library-react';
 
 const meta = {
   title: 'CSS Component/CardGroup',
@@ -43,15 +43,13 @@ export const Default: Story = {
   args: {
     children: (
       <>
-        <Card>
-          <Heading3>Design Systems</Heading3>
+        <Card heading="Design system" headingLevel={2}>
           <Paragraph>
             Herbruikbare componenten onafhankelijk van huisstijl, daar mag je ons voor wakker maken! Frameless heeft al
             aan meerdere white-label design systems mogen werken en is trots op onze bijdrage aan NL Design System.
           </Paragraph>
         </Card>
-        <Card>
-          <Heading3>Design Systems</Heading3>
+        <Card heading="Design system" headingLevel={6}>
           <Paragraph>
             Herbruikbare componenten onafhankelijk van huisstijl, daar mag je ons voor wakker maken! Frameless heeft al
             aan meerdere white-label design systems mogen werken en is trots op onze bijdrage aan NL Design System.

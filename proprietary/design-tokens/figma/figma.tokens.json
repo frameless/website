@@ -3187,7 +3187,10 @@
     "frameless": {
       "logo-text": {
         "font-family": { "value": "{frameless.typography.font-family.primary}" },
-        "font-size": { "value": "{frameless.typography.font-size.4xl}" },
+        "font-size": {
+          "small": { "value": "{frameless.typography.font-size.2xl}" },
+          "large": { "value": "{frameless.typography.font-size.4xl}" }
+        },
         "font-weight": { "value": "{frameless.typography.font-weight.normal}" }
       },
       "logo-image": {},

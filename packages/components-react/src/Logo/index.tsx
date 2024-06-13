@@ -7,7 +7,7 @@ import { LogoText } from './LogoText';
 import { LogoWrapper } from './LogoWrapper';
 
 export const Logo = () => (
-  <LogoWrapper className="frameless-logo__wrapper">
+  <LogoWrapper>
     <UtrechtLogo>
       <LogoImage />
     </UtrechtLogo>

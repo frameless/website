@@ -11,7 +11,7 @@
 .frameless-logo__text {
   display: inline-block;
   font-family: var(--frameless-logo-text-font-family);
-  font-size: var(--frameless-logo-text-font-size);
+  font-size: var(--frameless-logo-text-font-size-large);
 }
 
 .utrecht-logo {
@@ -63,17 +63,6 @@
   }
 
   .frameless-logo__text {
-    font-size: 2em;
-  }
-}
-
-// LARGE (300px - 399px) | Text + SVG groot 
-@container logowrapper (min-width: 375px) {
-  .utrecht-logo {
-    transform: scale(0.75);
-  }
-
-  .frameless-logo__text {
-    font-size: 3em;
+    font-size: var(--frameless-logo-text-font-size-small);
   }
 }

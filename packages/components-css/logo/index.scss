@@ -11,7 +11,7 @@
 .frameless-logo__text {
   display: inline-block;
   font-family: var(--frameless-logo-text-font-family);
-  font-size: var(--frameless-logo-text-font-size-large);
+  font-size: var(--frameless-logo-text-font-size);
 }
 
 .utrecht-logo {
@@ -49,7 +49,7 @@
   }
 
   .frameless-logo__text {
-    font-size: var(--frameless-logo-text-font-size-small);
+    font-size: var(--frameless-logo-text-small-font-size);
     margin-block: 0;
     margin-block-end: 0.5em;
     margin-inline: 0;
@@ -63,6 +63,6 @@
   }
 
   .frameless-logo__text {
-    font-size: var(--frameless-logo-text-font-size-small);
+    font-size: var(--frameless-logo-text-small-font-size);
   }
 }

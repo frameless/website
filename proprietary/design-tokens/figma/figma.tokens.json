@@ -3187,11 +3187,11 @@
     "frameless": {
       "logo-text": {
         "font-family": { "value": "{frameless.typography.font-family.primary}" },
-        "font-size": {
-          "small": { "value": "{frameless.typography.font-size.2xl}" },
-          "large": { "value": "{frameless.typography.font-size.4xl}" }
-        },
-        "font-weight": { "value": "{frameless.typography.font-weight.normal}" }
+        "font-size": { "value": "{frameless.typography.font-size.4xl}" },
+        "font-weight": { "value": "{frameless.typography.font-weight.normal}" },
+        "small": {
+          "font-size": { "value": "{frameless.typography.font-size.2xl}" }
+        }
       },
       "logo-image": {},
       "logo-wrapper": {

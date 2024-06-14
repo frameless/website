@@ -14,6 +14,12 @@
   --utrecht-space-around: 1;
 }
 
+@container (max-width: 400px) {
+  .frameless-card__content {
+    --utrecht-paragraph-font-size: var(--frameless-card-paragraph-font-size);
+  }
+}
+
 .frameless-card__heading {
   --utrecht-heading-2-font-size: var(--frameless-card-heading-font-size);
   --utrecht-heading-3-font-size: var(--frameless-card-heading-font-size);

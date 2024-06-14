@@ -62,7 +62,7 @@
         },
         "font-family": {
           "primary": {
-            "value": "Fira Sans, Helvetica, Arial, sans-serif",
+            "value": "'Fira Sans', Helvetica, Arial, sans-serif",
             "type": "fontFamilies"
           },
           "secondary": {
@@ -645,6 +645,20 @@
           },
           "4xl": {
             "value": "48px",
+            "type": "sizing"
+          }
+        },
+        "max-width": {
+          "sm": {
+            "value": "100px",
+            "type": "sizing"
+          },
+          "md": {
+            "value": "200px",
+            "type": "sizing"
+          },
+          "lg": {
+            "value": "500px",
             "type": "sizing"
           }
         }
@@ -2076,6 +2090,43 @@
         "row-gap": {
           "value": "{frameless.space.row.snail}",
           "type": "spacing"
+        }
+      }
+    }
+  },
+  "components/card": {
+    "frameless": {
+      "card": {
+        "heading": {
+          "font-size": { "value": "{frameless.typography.font-size.xl}" },
+          "margin-block-end": { "value": "{frameless.space.block.rat}" }
+        },
+        "font": {
+          "font-family": { "value": "{frameless.typography.font-family.primary}" }
+        },
+        "color": {
+          "background-color": { "value": "{frameless.color.petrol.95}" }
+        },
+        "paragraph": {
+          "font-size": { "value": "{frameless.typography.font-size.sm}" },
+          "margin-block-end": { "value": "{frameless.space.block.rat}" }
+        },
+        "border": {
+          "border-radius": { "value": "{frameless.border-radius.md}" }
+        },
+        "spacing": {
+          "max-width": { "value": "{frameless.size.max-width.lg}" },
+          "padding-block-start": { "value": "{frameless.space.block.snail}" },
+          "padding-block-end": { "value": "{frameless.space.block.snail}" },
+          "padding-inline-start": { "value": "{frameless.space.inline.rabbit}" },
+          "padding-inline-end": { "value": "{frameless.space.inline.rabbit}" }
+        },
+        "group": {
+          "gap": { "value": "{frameless.space.row.cat}" }
+        },
+
+        "line-height": {
+          "line-height": { "value": "{frameless.typography.line-height.sm}" }
         }
       }
     }

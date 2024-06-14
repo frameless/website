@@ -1,10 +1,8 @@
 /* @license CC0-1.0 */
 
-// import readme from '@frameless/components-css/heading1/README.md?raw';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Heading1 } from '@utrecht/component-library-react/dist/css-module';
 // import { Heading1 } from '@frameless/components-react'; // TODO: use frameless package instead
-// import '@frameless/components-css/heading1/index.scss';
 
 const meta = {
   title: 'CSS Component/Heading1',

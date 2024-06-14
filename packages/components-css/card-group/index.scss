@@ -1,24 +1,20 @@
 .frameless-card-group {
-  container-type: inline-size;
   display: grid;
   gap: var(--frameless-card-group-gap);
   grid-auto-flow: dense;
 }
 
-@media (width >= 600px) {
+.frameless-card-group__container {
+  container-type: inline-size;
+}
+
+@container (width >= 600px) {
   .frameless-card-group {
     grid-template-columns: 1fr 1fr;
   }
 }
-
-@media (width <= 900px) {
+@container (width <= 900px) {
   .frameless-card-group {
     grid-template-columns: 1fr;
-  }
-}
-
-@container (max-width: 400px) {
-  .frameless-card {
-    --utrecht-paragraph-font-size: var(--frameless-card-paragraph-font-size);
   }
 }

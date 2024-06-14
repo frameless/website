@@ -1,36 +1,31 @@
-import readme from '@frameless/components-css/card/README.md?raw';
-import { CardGroup } from '@frameless/components-react/src/CardGroup';
-import type { Meta, StoryObj } from '@storybook/react';
+/* @license CC0-1.0 */
 
 import '@frameless/components-css/card/index.scss';
+import readme from '@frameless/components-css/card-group/README.md?raw';
+import { Card } from '@frameless/components-react/src/Card';
+import { CardGroup } from '@frameless/components-react/src/CardGroup';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Paragraph } from '@utrecht/component-library-react';
 
-// adds Card to Storybook
 const meta = {
   title: 'React Component/CardGroup',
-
-  id: 'react-cardgroup',
-
+  id: 'react-card-group',
   component: CardGroup,
-
   argTypes: {
     children: {
       name: 'Content',
-
       description: 'CardGroup',
-
       type: {
         name: 'string',
         required: true,
       },
-
       defaultValue: '',
     },
   },
-
-  args: {},
-
+  args: {
+    children: '',
+  },
   tags: ['autodocs'],
-
   parameters: {
     docs: {
       description: {
@@ -42,12 +37,26 @@ const meta = {
 
 export default meta;
 
-// defines that this (part of the) story is documentation
 type Story = StoryObj<typeof meta>;
 
-// adds Frameless Card section to Card in Storybook
 export const Default: Story = {
-  name: 'Frameless CardGroup', // in sidenav shows Frameless Card below Docs
-  args: {},
-  parameters: {},
+  args: {
+    children: (
+      <>
+        <Card heading="Design System" headingLevel={2}>
+          <Paragraph>
+            Herbruikbare componenten onafhankelijk van huisstijl, daar mag je ons voor wakker maken! Frameless heeft al
+            aan meerdere white-label design systems mogen werken en is trots op onze bijdrage aan NL Design System.
+          </Paragraph>
+        </Card>
+        <Card heading="Design System" headingLevel={2}>
+          <Paragraph>
+            Herbruikbare componenten onafhankelijk van huisstijl, daar mag je ons voor wakker maken! Frameless heeft al
+            aan meerdere white-label design systems mogen werken en is trots op onze bijdrage aan NL Design System.
+          </Paragraph>
+        </Card>
+      </>
+    ),
+  },
+  name: 'Frameless CardGroup',
 };

@@ -64,11 +64,6 @@
           "primary": {
             "value": "'Fira Sans', Helvetica, Arial, sans-serif",
             "type": "fontFamilies"
-          },
-          "secondary": {
-            "value": "Oswald",
-            "type": "fontFamilies",
-            "description": "Used for the Frameless logo"
           }
         }
       },
@@ -3182,6 +3177,27 @@
           "value": "{utrecht.document.font-weight}",
           "type": "fontWeights"
         }
+      }
+    }
+  },
+  "components/logo": {
+    "utrecht": {
+      "logo": {}
+    },
+    "frameless": {
+      "logo-text": {
+        "font-family": { "value": "{frameless.typography.font-family.primary}" },
+        "font-size": { "value": "{frameless.typography.font-size.4xl}" },
+        "font-weight": { "value": "{frameless.typography.font-weight.normal}" },
+        "small": {
+          "font-size": { "value": "{frameless.typography.font-size.2xl}" }
+        }
+      },
+      "logo-image": {},
+      "logo-wrapper": {
+        "inline-size": { "value": "{frameless.space.inline.snail}" },
+        "padding-block": { "value": "{frameless.space.block.snail}" },
+        "padding-inline": { "value": "{frameless.space.inline.snail}" }
       }
     }
   },

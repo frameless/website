@@ -2121,6 +2121,10 @@
           "padding-inline-start": { "value": "{frameless.space.inline.rabbit}" },
           "padding-inline-end": { "value": "{frameless.space.inline.rabbit}" }
         },
+        "group": {
+          "gap": { "value": "{frameless.space.row.cat}" }
+        },
+
         "line-height": {
           "line-height": { "value": "{frameless.typography.line-height.sm}" }
         }

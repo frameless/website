@@ -43,13 +43,13 @@ export const Default: Story = {
   args: {
     children: (
       <>
-        <Card heading="Design system" headingLevel={2}>
+        <Card heading="Design System" headingLevel={2}>
           <Paragraph>
             Herbruikbare componenten onafhankelijk van huisstijl, daar mag je ons voor wakker maken! Frameless heeft al
             aan meerdere white-label design systems mogen werken en is trots op onze bijdrage aan NL Design System.
           </Paragraph>
         </Card>
-        <Card heading="Design system" headingLevel={6}>
+        <Card heading="Design System" headingLevel={2}>
           <Paragraph>
             Herbruikbare componenten onafhankelijk van huisstijl, daar mag je ons voor wakker maken! Frameless heeft al
             aan meerdere white-label design systems mogen werken en is trots op onze bijdrage aan NL Design System.

@@ -1,0 +1,137 @@
+@import "./node_modules/@utrecht/component-library-css/dist/index.css";
+@import "../../proprietary/design-tokens/dist/index.css";
+.frameless-card-group {
+  display: grid;
+  gap: var(--frameless-card-group-gap);
+  grid-auto-flow: dense;
+}
+
+.frameless-card-group__container {
+  container-type: inline-size;
+}
+
+@container (width >= 650px) {
+  .frameless-card-group {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@container (width <= 400px) {
+  .frameless-card-group {
+    grid-template-columns: 1fr;
+  }
+}
+.frameless-card {
+  background-color: var(--frameless-card-color-background-color);
+  border-radius: var(--frameless-card-border-border-radius);
+  font-family: var(--frameless-card-font-font-family);
+  max-inline-size: var(--frameless-card-spacing-max-width);
+  padding-block-end: var(--frameless-card-spacing-padding-block-end);
+  padding-block-start: var(--frameless-card-spacing-padding-block-start);
+  padding-inline-end: var(--frameless-card-spacing-padding-inline-end);
+  padding-inline-start: var(--frameless-card-spacing-padding-inline-start);
+}
+
+.frameless-card__content {
+  --utrecht-paragraph-margin-block-end: var(--frameless-card-paragraph-margin-block-end);
+  --utrecht-space-around: 1;
+}
+
+@container (max-width: 400px) {
+  .frameless-card__content {
+    --utrecht-paragraph-font-size: var(--frameless-card-paragraph-font-size);
+  }
+}
+.frameless-card__heading {
+  --utrecht-heading-2-font-size: var(--frameless-card-heading-font-size);
+  --utrecht-heading-3-font-size: var(--frameless-card-heading-font-size);
+  --utrecht-heading-4-font-size: var(--frameless-card-heading-font-size);
+  --utrecht-heading-5-font-size: var(--frameless-card-heading-font-size);
+  --utrecht-heading-6-font-size: var(--frameless-card-heading-font-size);
+  --utrecht-heading-2-margin-block-end: var(--frameless-card-heading-margin-block-end);
+  --utrecht-heading-3-margin-block-end: var(--frameless-card-heading-margin-block-end);
+  --utrecht-heading-4-margin-block-end: var(--frameless-card-heading-margin-block-end);
+  --utrecht-heading-5-margin-block-end: var(--frameless-card-heading-margin-block-end);
+  --utrecht-heading-6-margin-block-end: var(--frameless-card-heading-margin-block-end);
+  --utrecht-heading-4-line-height: var(--frameless-card-line-height);
+  --utrecht-heading-5-line-height: var(--frameless-card-line-height);
+  --utrecht-heading-6-line-height: var(--frameless-card-line-height);
+  --utrecht-space-around: 1;
+}
+
+.frameless-logo__wrapper {
+  align-items: center;
+  container: logowrapper/inline-size;
+  display: flex;
+  flex-basis: min-content;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.frameless-logo__text {
+  display: inline-block;
+  font-family: var(--frameless-logo-text-font-family);
+  font-size: var(--frameless-logo-text-font-size);
+}
+
+.utrecht-logo {
+  transform: scale(0.75);
+}
+
+@container logowrapper (min-width: 60px) and (max-width: 185px) {
+  .frameless-logo__text {
+    display: none;
+  }
+  .utrecht-logo {
+    transform: scale(0.55);
+  }
+}
+@media (186px <= width <= 337px) {
+  .frameless-logo__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
+@container logowrapper (min-width: 186px) and (max-width: 300px) {
+  .utrecht-logo {
+    transform: scale(0.55);
+  }
+  .frameless-logo__text {
+    font-size: var(--frameless-logo-text-small-font-size);
+    margin-block: 0;
+    margin-block-end: 0.5em;
+    margin-inline: 0;
+  }
+}
+@container logowrapper (min-width: 301px) and (max-width: 374px) {
+  .utrecht-logo {
+    transform: scale(0.55);
+  }
+  .frameless-logo__text {
+    font-size: var(--frameless-logo-text-small-font-size);
+  }
+}
+.frameless-page-container {
+  container: framelesshomepage/inline-size;
+}
+
+.frameless-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-block-end: var(--utrecht-page-margin-block-end);
+  margin-block-start: var(--utrecht-page-margin-block-start);
+  max-inline-size: var(--utrecht-page-max-inline-size);
+}
+
+section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}

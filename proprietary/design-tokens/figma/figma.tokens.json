@@ -1071,6 +1071,18 @@
           }
         }
       }
+    },
+    "frameless": {
+      "rich-text": { "max-inline-size": { "value": "800px" } }
+    }
+  },
+  "components/page": {
+    "utrecht": {
+      "page": {
+        "max-inline-size": { "value": "{frameless.rich-text.max-inline-size}" },
+        "margin-block-end": { "value": "{frameless.space.block.cat}" },
+        "margin-block-start": { "value": "{frameless.space.block.cat}" }
+      }
     }
   },
   "components/accordion": {

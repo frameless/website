@@ -1,0 +1,1 @@
+.frameless-card-group{display:grid;gap:var(--frameless-card-group-gap);grid-auto-flow:dense}.frameless-card-group__container{container-type:inline-size}@container (width >= 650px){.frameless-card-group{grid-template-columns:1fr 1fr}}@container (width <= 400px){.frameless-card-group{grid-template-columns:1fr}}

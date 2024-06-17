@@ -8,7 +8,7 @@
     "engines-type": "error",
     "files-type": "error",
     "homepage-type": "error",
-    "keywords-type": "error",
+    "keywords-type": "off",
     "license-type": "error",
     "main-type": "error",
     "man-type": "error",

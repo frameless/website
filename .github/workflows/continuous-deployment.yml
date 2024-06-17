@@ -92,11 +92,11 @@ jobs:
         run: |
           pnpm run --if-present test-build
 
-      - name: "Retain build artifact: storybook"
+      - name: "Retain build artifact: frameless website"
         uses: actions/upload-artifact@v4.3.1
         with:
-          name: storybook
-          path: packages/storybook/dist/
+          name: frameless website
+          path: apps/next.frameless.io/
           retention-days: 1
 
   test:

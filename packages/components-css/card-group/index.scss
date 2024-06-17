@@ -8,12 +8,12 @@
   container-type: inline-size;
 }
 
-@container (width >= 600px) {
+@container (width >= 650px) {
   .frameless-card-group {
     grid-template-columns: 1fr 1fr;
   }
 }
-@container (width <= 900px) {
+@container (width <= 400px) {
   .frameless-card-group {
     grid-template-columns: 1fr;
   }

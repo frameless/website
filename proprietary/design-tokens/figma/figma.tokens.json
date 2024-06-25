@@ -1081,7 +1081,11 @@
       "page": {
         "max-inline-size": { "value": "{frameless.rich-text.max-inline-size}" },
         "margin-block-end": { "value": "{frameless.space.block.cat}" },
-        "margin-block-start": { "value": "{frameless.space.block.cat}" }
+        "margin-block-start": { "value": "{frameless.space.block.cat}" },
+        "padding-inline-start": { "value": "{frameless.space.inline.mouse}" },
+        "padding-inline-end": { "value": "{frameless.space.inline.mouse}" },
+        "padding-block-start": { "value": "{frameless.space.block.mouse}" },
+        "padding-block-end": { "value": "{frameless.space.block.cat}" }
       }
     }
   },

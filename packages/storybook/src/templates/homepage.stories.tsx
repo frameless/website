@@ -31,9 +31,8 @@ export const Default: Story = {
     <Page>
       <PageContent>
         <div {...args} className="frameless-page-container">
-          <Logo />
-
           <div className="frameless-page">
+            <Logo />
             <section className="frameless-section__about">
               <Heading2>Wij Maken</Heading2>
 

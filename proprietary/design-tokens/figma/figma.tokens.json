@@ -2115,15 +2115,13 @@
         "font": {
           "font-family": { "value": "{frameless.typography.font-family.primary}" }
         },
-        "color": {
-          "background-color": { "value": "{frameless.color.petrol.95}" }
-        },
+        "background-color": { "value": "{frameless.color.petrol.95}" },
         "paragraph": {
           "font-size": { "value": "{frameless.typography.font-size.sm}" },
           "margin-block-end": { "value": "{frameless.space.block.rat}" }
         },
         "border": {
-          "border-radius": { "value": "{frameless.border-radius.md}" }
+          "radius": { "value": "{frameless.border-radius.md}" }
         },
         "spacing": {
           "max-width": { "value": "{frameless.size.max-width.lg}" },

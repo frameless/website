@@ -1,6 +1,9 @@
 .frameless-card {
-  background-color: var(--frameless-card-color-background-color);
-  border-radius: var(--frameless-card-border-border-radius);
+  background-color: var(--frameless-card-background-color);
+  border-color: var(--frameless-card-border-color);
+  border-radius: var(--frameless-card-border-radius);
+  border-style: solid;
+  border-width: var(--frameless-card-border-width, 0);
   font-family: var(--frameless-card-font-font-family);
   max-inline-size: var(--frameless-card-spacing-max-width);
   padding-block-end: var(--frameless-card-spacing-padding-block-end);

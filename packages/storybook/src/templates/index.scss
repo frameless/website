@@ -1,0 +1,40 @@
+.frameless-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+section:nth-of-type(1),
+section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+// DARKMODE
+@mixin frameless-theme--dark {
+  --utrecht-document-background-color: var(--utrecht-document-inverse-background-color);
+  --utrecht-document-color: var(--utrecht-document-inverse-color);
+  --utrecht-paragraph-color: var(--utrecht-document-inverse-color);
+  --utrecht-heading-1-color: var(--utrecht-document-inverse-color);
+  --utrecht-heading-2-color: var(--utrecht-document-inverse-color);
+  --utrecht-heading-3-color: var(--utrecht-document-inverse-color);
+  --utrecht-heading-4-color: var(--utrecht-document-inverse-color);
+  --utrecht-heading-5-color: var(--utrecht-document-inverse-color);
+  --utrecht-heading-6-color: var(--utrecht-document-inverse-color);
+  --utrecht-link-color: #ecd8ca;
+  --utrecht-link-text-decoration-color: currentColor;
+  --frameless-card-background-color: var(--utrecht-document-inverse-background-color);
+  --frameless-card-border-color: #ecd8ca;
+  --frameless-card-border-width: 1.5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .frameless-theme {
+    @include frameless-theme--dark;
+  }
+}
+
+.frameless-theme--dark {
+  @include frameless-theme--dark;
+}

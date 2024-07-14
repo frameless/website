@@ -1,0 +1,9 @@
+.frameless-page-content {
+  margin-block-start: var(--frameless-page-content-margin-block-start);
+  margin-inline: auto;
+  max-inline-size: var(--frameless-page-content-max-inline-size);
+  padding-block-end: var(--frameless-page-content-padding-block-end);
+  padding-block-start: var(--frameless-page-content-padding-block-start);
+  padding-inline-end: var(--frameless-page-content-padding-inline-end);
+  padding-inline-start: var(--frameless-page-content-padding-inline-start);
+}

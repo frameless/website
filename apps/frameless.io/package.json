@@ -14,21 +14,26 @@
     "url": "git@github.com:frameless/website/.git"
   },
   "devDependencies": {
+    "@fontsource/fira-sans": "5.0.20",
+    "@fontsource/oswald": "5.0.20",
     "@frameless/design-tokens": "workspace:*",
     "postcss-discard-duplicates": "7.0.0",
     "rimraf": "3.0.2",
     "rollup": "3.29.4",
     "rollup-plugin-copy": "3.5.0",
+    "rollup-plugin-gzip": "3.1.2",
     "rollup-plugin-postcss": "4.0.2"
   },
   "scripts": {
     "build": "rollup --config ./rollup.config.mjs",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "serve": "npx http-server ./dist"
   },
   "main": "dist/index.css",
   "dependencies": {
     "@frameless/components-css": "workspace:*",
     "@frameless/design-tokens": "workspace:*",
+    "@fullhuman/postcss-purgecss": "6.0.0",
     "@utrecht/component-library-css": "3.2.0"
   }
 }

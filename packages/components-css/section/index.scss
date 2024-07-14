@@ -1,0 +1,8 @@
+.frameless-section--alternate {
+  --frameless-card-background-color: var(--frameless-section-alternate-card-background-color);
+  --frameless-card-border-color: var(--frameless-section-alternate-card-border-color);
+  --frameless-card-border-width: 1px;
+
+  background-color: var(--frameless-section-alternate-background-color);
+  color: var(--frameless-section-alternate-color);
+}

@@ -1,7 +1,12 @@
 .frameless-card-group {
   display: grid;
   gap: var(--frameless-card-group-gap);
-  grid-auto-flow: dense;
+  grid-auto-flow: row dense;
+  margin-block-end: var(--frameless-card-group-margin-block-end);
+}
+
+.frameless-card-group--highlight-last {
+  grid-template-columns: 1fr auto;
 }
 
 .frameless-card-group__container {

@@ -21,5 +21,8 @@
   },
   "dependencies": {
     "@fontsource/fira-sans": "5.0.20"
+  },
+  "devDependencies": {
+    "@fontsource/oswald": "5.0.20"
   }
 }

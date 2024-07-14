@@ -19,17 +19,27 @@
   --utrecht-document-background-color: var(--utrecht-document-inverse-background-color);
   --utrecht-document-color: var(--utrecht-document-inverse-color);
   --utrecht-paragraph-color: var(--utrecht-document-inverse-color);
+  --utrecht-paragraph-lead-color: var(--utrecht-document-inverse-color);
   --utrecht-heading-1-color: var(--utrecht-document-inverse-color);
   --utrecht-heading-2-color: var(--utrecht-document-inverse-color);
   --utrecht-heading-3-color: var(--utrecht-document-inverse-color);
   --utrecht-heading-4-color: var(--utrecht-document-inverse-color);
   --utrecht-heading-5-color: var(--utrecht-document-inverse-color);
   --utrecht-heading-6-color: var(--utrecht-document-inverse-color);
-  --utrecht-link-color: #ecd8ca;
+  --utrecht-link-color: var(--frameless-color-petrol-70);
+  --utrecht-link-hover-color: var(--frameless-color-petrol-80);
   --utrecht-link-text-decoration-color: currentColor;
   --frameless-card-background-color: var(--utrecht-document-inverse-background-color);
-  --frameless-card-border-color: #ecd8ca;
-  --frameless-card-border-width: 1.5px;
+  --frameless-card-border-color: var(--frameless-color-gray-60);
+  --frameless-card-border-width: 1px;
+  --frameless-card-box-shadow-color: var(--frameless-color-black);
+  --frameless-section-alternate-background-color: var(--frameless-color-petrol-20);
+  --frameless-section-alternate-card-background-color: var(--utrecht-document-inverse-background-color);
+  --frameless-section-alternate-card-border-width: 1px;
+  --frameless-section-alternate-card-border-color: var(--frameless-color-gray-60);
+  summary {
+    color: var(--utrecht-document-inverse-color);
+  }
 }
 
 @media (prefers-color-scheme: dark) {

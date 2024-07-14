@@ -5,13 +5,15 @@
   display: flex;
   flex-basis: min-content;
   flex-direction: row;
-  justify-content: center;
 }
 
 .frameless-logo__text {
   display: inline-block;
   font-family: var(--frameless-logo-text-font-family);
   font-size: var(--frameless-logo-text-font-size);
+  font-weight: var(--frameless-logo-text-font-weight);
+  letter-spacing: 0.15ch;
+  text-transform: var(--frameless-logo-text-text-transform);
 }
 
 .utrecht-logo {

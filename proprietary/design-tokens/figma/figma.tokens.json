@@ -66,7 +66,7 @@
             "type": "fontFamilies"
           },
           "secondary": {
-            "value": "'Oswald Variable', 'Fira Sans', Helvetica, Arial, sans-serif",
+            "value": "'Oswald', 'Oswald Variable', 'Fira Sans', Helvetica, Arial, sans-serif",
             "type": "fontFamilies"
           }
         }

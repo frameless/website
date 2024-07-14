@@ -34,6 +34,15 @@ export default [
             transform: (contents) =>
               contents.toString().replace("./index.scss", "../dist/index.css"),
           },
+          // Copy font-files in a directory expected by the font-css files
+          {
+            src: "./node_modules/@fontsource/fira-sans/files",
+            dest: "./dist/assets",
+          },
+          {
+            src: "./node_modules/@fontsource/oswald/files",
+            dest: "./dist/assets",
+          },
         ],
       }),
     ],

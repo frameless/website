@@ -24,7 +24,7 @@
     "@frameless/components-react": "workspace:*",
     "@frameless/design-tokens": "workspace:*",
     "@frameless/font": "workspace:*",
-    "@storybook/addon-a11y": "8.1.9",
+    "@storybook/addon-a11y": "8.2.2",
     "@storybook/addon-actions": "8.1.9",
     "@storybook/addon-docs": "8.1.9",
     "@storybook/addon-interactions": "8.1.9",

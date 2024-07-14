@@ -95,8 +95,8 @@ jobs:
       - name: "Retain build artifact: website"
         uses: actions/upload-artifact@v4.3.3
         with:
-          name: next.frameless.io
-          path: apps/next.frameless.io/dist/
+          name: frameless.io
+          path: apps/frameless.io/dist/
           retention-days: 1
 
       - name: "Retain build artifact: storybook"
@@ -140,17 +140,17 @@ jobs:
       - name: Checkout release branch
         uses: actions/checkout@v4.1.6
 
-      - name: "Restore build artifact: next.frameless.io"
+      - name: "Restore build artifact: frameless.io"
         uses: actions/download-artifact@v4.1.4
         with:
-          name: next.frameless.io
-          path: apps/next.frameless.io/dist/
+          name: frameless.io
+          path: apps/frameless.io/dist/
 
       - name: Continuous Deployment to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.6.1
         with:
           branch: gh-pages
-          folder: apps/next.frameless.io/dist/
+          folder: apps/frameless.io/dist/
 
   publish-npm:
     runs-on: ubuntu-latest

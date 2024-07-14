@@ -43,7 +43,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .frameless-theme {
+  .frameless-theme--media-query {
     @include frameless-theme--dark;
   }
 }

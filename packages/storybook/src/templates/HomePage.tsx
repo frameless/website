@@ -5,10 +5,16 @@ import { Document, Heading2, Link, Paragraph } from '@utrecht/component-library-
 import clsx from 'clsx';
 
 interface HomePageProps {
-  darkMode?: boolean;
+  colorScheme?: 'dark' | 'light';
 }
-export const HomePage = ({ darkMode }: HomePageProps) => (
-  <Document className={clsx('utrecht-document--surface', darkMode && 'frameless-theme--dark')}>
+export const HomePage = ({ colorScheme }: HomePageProps) => (
+  <Document
+    className={clsx('utrecht-document--surface', {
+      'frameless-theme--dark': colorScheme === 'dark',
+      'frameless-theme--light': colorScheme === 'light',
+      'frameless-thmee--media-query': !colorScheme,
+    })}
+  >
     <PageContent>
       <Logo />
     </PageContent>

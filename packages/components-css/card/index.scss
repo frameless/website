@@ -1,15 +1,20 @@
 .frameless-card {
   background-color: var(--frameless-card-background-color);
-  border-color: var(--frameless-card-border-color);
+  border-color: var(--frameless-card-border-color, transparent);
   border-radius: var(--frameless-card-border-radius);
   border-style: solid;
   border-width: var(--frameless-card-border-width, 0);
+  box-shadow: var(--frameless-card-box-shadow-x) var(--frameless-card-box-shadow-y)
+    var(--frameless-card-box-shadow-blur) var(--frameless-card-box-shadow-spread) var(--frameless-card-box-shadow-color);
+  display: flex;
+  flex-direction: column;
   font-family: var(--frameless-card-font-font-family);
-  max-inline-size: var(--frameless-card-spacing-max-width);
-  padding-block-end: var(--frameless-card-spacing-padding-block-end);
-  padding-block-start: var(--frameless-card-spacing-padding-block-start);
-  padding-inline-end: var(--frameless-card-spacing-padding-inline-end);
-  padding-inline-start: var(--frameless-card-spacing-padding-inline-start);
+  gap: 2rem;
+  max-inline-size: var(--frameless-card-max-width);
+  padding-block-end: var(--frameless-card-padding-block-end);
+  padding-block-start: var(--frameless-card-padding-block-start);
+  padding-inline-end: var(--frameless-card-padding-inline-end);
+  padding-inline-start: var(--frameless-card-padding-inline-start);
 }
 
 .frameless-card__content {
@@ -38,4 +43,9 @@
   --utrecht-heading-5-line-height: var(--frameless-card-line-height);
   --utrecht-heading-6-line-height: var(--frameless-card-line-height);
   --utrecht-space-around: 1;
+}
+
+.frameless-card__illustration {
+  max-block-size: 6rem;
+  max-inline-size: 6rem;
 }

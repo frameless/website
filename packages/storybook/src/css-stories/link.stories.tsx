@@ -49,7 +49,7 @@ export const LinkInParagraph: Story = {
   decorators: [
     (Story) => (
       <Paragraph>
-        Afgelopen tijd hebben Robbert, Yolijn, Ali, Savi, Rowan, Tessa, Marwa, Angela en Bryan aan veel leuke projecten
+        Afgelopen tijd hebben Robbert, Yolijn, Ali, Savi, Tessa, Marwa, Angela en Bryan aan veel leuke projecten
         gewerkt. {Story()} kun je een aantal van deze projecten zien.
       </Paragraph>
     ),
@@ -65,7 +65,7 @@ export const LinkInLeadParagraph: Story = {
   decorators: [
     (Story) => (
       <Paragraph lead>
-        Afgelopen tijd hebben Robbert, Yolijn, Ali, Savi, Rowan, Tessa, Marwa, Angela en Bryan aan veel leuke projecten
+        Afgelopen tijd hebben Robbert, Yolijn, Ali, Savi, Tessa, Marwa, Angela en Bryan aan veel leuke projecten
         gewerkt. {Story()} kun je een aantal van deze projecten zien.
       </Paragraph>
     ),
@@ -81,7 +81,7 @@ export const LinkInSmallPrint: Story = {
   decorators: [
     (Story) => (
       <Paragraph small>
-        Afgelopen tijd hebben Robbert, Yolijn, Ali, Savi, Rowan, Tessa, Marwa, Angela en Bryan aan veel leuke projecten
+        Afgelopen tijd hebben Robbert, Yolijn, Ali, Savi, Tessa, Marwa, Angela en Bryan aan veel leuke projecten
         gewerkt. {Story()} kun je een aantal van deze projecten zien.
       </Paragraph>
     ),

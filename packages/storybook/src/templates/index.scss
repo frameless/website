@@ -9,8 +9,16 @@
     --utrecht-heading-3-margin-block-start: 0;
   }
 
+  .utrecht-nav-bar {
+    margin-block-start: 32px;
+  }
+
   details[open] summary {
     margin-block-end: 24px;
+  }
+
+  .utrecht-img {
+    max-inline-size: 100%;
   }
 }
 

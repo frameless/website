@@ -1,7 +1,6 @@
 // LOGO (XL) STYLING 
 .frameless-logo__wrapper {
   align-items: center;
-  container: logowrapper / inline-size;
   display: flex;
   flex-basis: min-content;
   flex-direction: row;
@@ -13,11 +12,9 @@
   font-size: var(--frameless-logo-text-font-size);
   font-weight: var(--frameless-logo-text-font-weight);
   letter-spacing: 0.15ch;
+  margin-block-end: 0;
+  margin-block-start: 0;
   text-transform: var(--frameless-logo-text-text-transform);
-}
-
-.utrecht-logo {
-  transform: scale(0.75);
 }
 
 // RESPONSIVENESS
@@ -26,10 +23,6 @@
 @container logowrapper (min-width: 60px) and (max-width: 185px) {
   .frameless-logo__text {
     display: none;
-  }
-
-  .utrecht-logo {
-    transform: scale(0.55);
   }
 }
 
@@ -60,10 +53,6 @@
 
 // LOGO LARGE (251px - 299px) | Kleine Text en SVG (naast elkaar)
 @container logowrapper (min-width: 301px) and (max-width: 374px) {
-  .utrecht-logo {
-    transform: scale(0.55);
-  }
-
   .frameless-logo__text {
     font-size: var(--frameless-logo-text-small-font-size);
   }

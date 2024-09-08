@@ -1,3 +1,3 @@
 <!-- @license CC0-1.0 -->
 
-# Frameless Header component
+# Frameless Page Content component

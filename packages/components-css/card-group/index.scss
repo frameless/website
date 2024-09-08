@@ -3,6 +3,8 @@
   gap: var(--frameless-card-group-gap);
   grid-auto-flow: row dense;
   margin-block-end: var(--frameless-card-group-margin-block-end);
+  padding-block-end: var(--frameless-card-group-padding-block-end);
+  padding-block-start: var(--frameless-card-group-padding-block-start);
 }
 
 .frameless-card-group--highlight-last {

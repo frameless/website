@@ -1520,6 +1520,12 @@
           }
         }
       }
+    },
+    "utrecht": {
+      "backdrop": {
+        "background-color": { "value": "#eee" },
+        "opacity": { "value": 0.9 }
+      }
     }
   },
   "components/blockquote": {
@@ -2133,7 +2139,8 @@
     "frameless": {
       "card-group": {
         "gap": { "value": "{frameless.space.row.cat}" },
-        "margin-block-end": { "value": "{frameless.space.block.cat}" }
+        "margin-block-end": { "value": "{frameless.space.block.cat}" },
+        "padding-block-start": { "value": "24px" }
       }
     }
   },
@@ -2765,6 +2772,18 @@
               "type": "lineHeights"
             }
           }
+        },
+        "padding-inline-end": {
+          "value": "28px"
+        },
+        "padding-inline-start": {
+          "value": "28px"
+        },
+        "padding-block-end": {
+          "value": "32px"
+        },
+        "padding-block-start": {
+          "value": "32px"
         }
       }
     }
@@ -3079,6 +3098,14 @@
       }
     }
   },
+  "components/hero": {
+    "frameless": {
+      "hero": {
+        "padding-block-end": { "value": "32px" },
+        "padding-block-start": { "value": "24px" }
+      }
+    }
+  },
   "components/icon-only-button": {
     "todo": {
       "icon-only-button": {
@@ -3346,6 +3373,18 @@
         "border-width": {
           "value": "{frameless.border-width.sm}",
           "type": "borderWidth"
+        }
+      }
+    }
+  },
+  "components/nav-bar": {
+    "utrecht": {
+      "nav-bar": {
+        "link": {
+          "padding-block-end": { "value": "16px" },
+          "padding-block-start": { "value": "8px" },
+          "padding-inline-end": { "value": "8px" },
+          "padding-inline-start": { "value": "8px" }
         }
       }
     }
@@ -3988,6 +4027,8 @@
   "components/section": {
     "frameless": {
       "section": {
+        "padding-block-end": { "value": "32px" },
+        "padding-block-start": { "value": "24px" },
         "alternate": {
           "background-color": {
             "value": "{frameless.color.petrol.95}",

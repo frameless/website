@@ -1,0 +1,6 @@
+.frameless-page-header__container {
+  display: grid;
+  grid-auto-columns: 1fr auto;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}

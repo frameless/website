@@ -1,3 +1,5 @@
 .frameless-hero {
   justify-content: space-between;
+  padding-block-end: var(--frameless-hero-padding-block-end);
+  padding-block-start: var(--frameless-hero-padding-block-start);
 }

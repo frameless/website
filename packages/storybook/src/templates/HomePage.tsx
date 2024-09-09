@@ -39,7 +39,7 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
         </Paragraph>
         <TechnicalPartner style={{ width: '22rem', paddingBlockEnd: '24px' }} />
         <UnorderedList>
-          <UnorderedListItem>Gebruiksvriendelijkeheid voorop, voor eindgebruikers én redactie.</UnorderedListItem>
+          <UnorderedListItem>Gebruiksvriendelijkheid voorop, voor eindgebruikers én redactie.</UnorderedListItem>
           <UnorderedListItem>Expertise in bouwen en onderhouden van robuuste webapplicaties.</UnorderedListItem>
           <UnorderedListItem>WCAG-EM audits en hulp bij het oplossen van toegankelijkheidsproblemen</UnorderedListItem>
         </UnorderedList>

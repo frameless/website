@@ -76,7 +76,7 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
         </Paragraph>
 
         <ButtonGroup>
-          <ButtonLink appearance="primary-action-button" href="#">
+          <ButtonLink appearance="primary-action-button" href="#contact">
             Neem gelijk contact op
           </ButtonLink>
           <ButtonLink appearance="secondary-action-button" href="#voorbeelden">

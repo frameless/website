@@ -20,6 +20,12 @@
   .utrecht-img {
     max-inline-size: 100%;
   }
+
+  --frameless-illustration-color: #122529;
+  --frameless-illustration-background-color: white;
+  --frameless-illustration-floor-color: #a9c7cb;
+  --frameless-illustration-background-detail-color: #295960;
+  --frameless-illustration-detail-color: #51929a;
 }
 
 // DARKMODE
@@ -48,6 +54,12 @@
   summary {
     color: var(--utrecht-document-inverse-color);
   }
+
+  --frameless-illustration-color: #a9c7cb;
+  --frameless-illustration-background-color: #122529;
+  --frameless-illustration-floor-color: #a9c7cb;
+  --frameless-illustration-background-detail-color: #122529;
+  --frameless-illustration-detail-color: #51929a;
 }
 
 @media (prefers-color-scheme: dark) {

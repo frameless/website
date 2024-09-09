@@ -272,13 +272,6 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
         <Paragraph>
           Mail ons op <Link href="mailto:hello@frameless.io">hello@frameless.io</Link>, dan spreken we snel een keer af!
         </Paragraph>
-        <Heading3 id="offerte">Vraag een offerte aan</Heading3>
-        <Paragraph>
-          <Link href="https://forms.gle/gyKPd6Ha9Ng7C9s56" target="_blank">
-            Vraag nu een offerte aan
-          </Link>{' '}
-          via ons Google formulier en laat ons weten wat we voor je kunnen betekenen.
-        </Paragraph>
       </Section>
     </Page>
   </Document>

@@ -41,7 +41,7 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
         <UnorderedList>
           <UnorderedListItem>Gebruiksvriendelijkheid voorop, voor eindgebruikers én redactie.</UnorderedListItem>
           <UnorderedListItem>Expertise in bouwen en onderhouden van robuuste webapplicaties.</UnorderedListItem>
-          <UnorderedListItem>WCAG-EM audits en hulp bij het oplossen van toegankelijkheidsproblemen</UnorderedListItem>
+          <UnorderedListItem>WCAG-EM audits en hulp bij het oplossen van toegankelijkheidsproblemen.</UnorderedListItem>
         </UnorderedList>
         <Link href="#aanpak">Lees meer over de Frameless aanpak</Link>
       </Hero>
@@ -59,7 +59,7 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
         <Heading3>Plan van aanpak</Heading3>
         <Paragraph>
           We onderzoeken welke oplossingen, technieken en expertise er in de organisatie aanwezig is om daarna met een
-          plan van aanpak te komen voor migratie of vernieuwing. Dat doe we graag samen met betrokken expertise uit de
+          plan van aanpak te komen voor migratie of vernieuwing. Dat doen we graag samen met betrokken expertise uit de
           organisatie én andere leveranciers.
         </Paragraph>
         <Heading3>Ontzorgen bij uitvoering</Heading3>
@@ -105,7 +105,7 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
               expertise in huis voor het doen van audits en het opleveren van een toegankelijkheidsverklaring.
             </Paragraph>
             <Paragraph>
-              We maken een onderzoeksrapport met de gevonden problemen en verwijzen we naar{' '}
+              We maken een onderzoeksrapport met de gevonden problemen en verwijzen naar{' '}
               <Link href="https://nldesignsystem.nl/wcag/">de WCAG paginas van NL Design System</Link> die helpen met
               het zelf testen en oplossen van de problemen.
             </Paragraph>
@@ -123,8 +123,8 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
           <Card headingLevel={3} heading="Eigen projecten">
             <Paragraph>
               Wanneer wij een project voor je doen willen we natuurlijk dat hij voor alle gebruikers goed werkt. Daarom
-              doen we standaard een onderzoek doen volgens de WCAG-EM methode van het W3C. Het onderzoeksrapport is bij
-              ons onderdeel van de opdracht en wanneer je dat wil maken we er ook gewoon gelijk een
+              doen we standaard een onderzoek volgens de WCAG-EM methode van het W3C. Het onderzoeksrapport is bij ons
+              onderdeel van de opdracht en wanneer je dat wil maken we er ook gewoon gelijk een
               toegankelijkheidsverklaring van.
             </Paragraph>
             <Heading4>Mogen wij van WCAG-eend dat wel doen?</Heading4>

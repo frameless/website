@@ -244,13 +244,13 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
                 hebben we als een NL Design System thema beschikbaar gemaakt.
               </Paragraph>
             </Card>
-            <Card headingLevel={3} heading="Wilbur voor Schiphol">
+            {/* <Card headingLevel={3} heading="Wilbur voor Schiphol">
               <Paragraph>
                 We hebben <Link href="https://opencatalogi.nl/">OpenCatalogi.nl</Link> gemigreerd naar React componenten
                 uit de NL Design System community. De huisstijl keuzes van gemeente Rotterdam die hiervoor nodig waren
                 hebben we als een NL Design System thema beschikbaar gemaakt.
               </Paragraph>
-            </Card>
+            </Card> */}
           </CardGroup>
         </details>
       </Section>

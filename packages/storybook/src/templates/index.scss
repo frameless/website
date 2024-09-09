@@ -21,6 +21,12 @@
     max-inline-size: 100%;
   }
 
+  .frameless-illustration {
+    inline-size: 22rem;
+    padding-block-end: 24px;
+    padding-block-start: 24px;
+  }
+
   --frameless-illustration-color: #122529;
   --frameless-illustration-background-color: white;
   --frameless-illustration-floor-color: #a9c7cb;
@@ -51,15 +57,19 @@
   --frameless-section-alternate-card-background-color: var(--utrecht-document-inverse-background-color);
   --frameless-section-alternate-card-border-width: 1px;
   --frameless-section-alternate-card-border-color: var(--frameless-color-gray-60);
+  --utrecht-unordered-list-marker-color: white;
   summary {
     color: var(--utrecht-document-inverse-color);
   }
 
-  --frameless-illustration-color: #a9c7cb;
-  --frameless-illustration-background-color: #122529;
-  --frameless-illustration-floor-color: #a9c7cb;
-  --frameless-illustration-background-detail-color: #122529;
-  --frameless-illustration-detail-color: #51929a;
+  .frameless-illustration--backdrop {
+    background-color: rgba(255 255 255 70%);
+    border-radius: 40px;
+    padding-block-end: 16px;
+    padding-block-start: 16px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

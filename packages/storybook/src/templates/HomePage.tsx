@@ -37,7 +37,7 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
           ervaren in transitie van bestaande systemen naar gebruiksvriendelijke, onderhoudbare oplossingen volgens de
           Common Ground principes.
         </Paragraph>
-        <TechnicalPartner style={{ width: '22rem', paddingBlockEnd: '24px' }} />
+        <TechnicalPartner className="frameless-illustration" />
         <UnorderedList>
           <UnorderedListItem>Gebruiksvriendelijkheid voorop, voor eindgebruikers én redactie.</UnorderedListItem>
           <UnorderedListItem>Expertise in bouwen en onderhouden van robuuste webapplicaties.</UnorderedListItem>
@@ -51,7 +51,7 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
           Sta je voor een technische of organistorische uitdaging? Na een goede kop koffie zijn wij een ideale
           sparringspartner!
         </Paragraph>
-        <Coffee style={{ width: '22rem', paddingBlockEnd: '24px', paddingBlockStart: '24px' }} />
+        <Coffee className="frameless-illustration frameless-illustration--backdrop" />
         <Paragraph>
           Tijdens een kennismaking bespreken we waar jullie mee bezig zijn, en bekijken we op welke manier Frameless of
           ons netwerk kunnen helpen.
@@ -96,7 +96,7 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
           uitvoeren, tips geven en meehelpen bij het verbeteren van de gevonden problemen en na een aantal maanden een
           hertest doen. Zo ben je er helemaal klaar voor!
         </Paragraph>
-        <AccessiblityPartner style={{ width: '22rem', paddingBlockEnd: '24px' }} />
+        <AccessiblityPartner className="frameless-illustration" />
         <Paragraph>Als Frameless ondersteunen wij graag jouw organisatie bij:</Paragraph>
         <CardGroup>
           <Card headingLevel={3} heading="WCAG audit">

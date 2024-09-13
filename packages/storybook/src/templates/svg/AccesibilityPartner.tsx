@@ -8,8 +8,8 @@ export const AccessiblityPartner = ({ className, ...restProps }: HTMLAttributes<
     viewBox="0 0 10558 8155"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="Speelse schets van een vrouw die met vergrootglas naar een webpagina kijkt"
   >
-    <title>Speelse schets van een vrouw die met vergrootglas naar een webpagina kijkt</title>
     <desc>
       Illustratie in de huisstijlkleuren van Frameless. Links staat een vrouw met zwart lang haar met een knot bovenop,
       sportief gekleed in een t-shirt en korte broek. Rechts staan 2 frames alsof het een webpagina is en een code

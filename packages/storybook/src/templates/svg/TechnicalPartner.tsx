@@ -1,8 +1,14 @@
 import { HTMLAttributes } from 'react';
 
 export const TechnicalPartner = (props: HTMLAttributes<HTMLOrSVGElement>) => (
-  <svg {...props} viewBox="0 0 10066 7705" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <title>Speelse schets van twee mensen die samenwerken.</title>
+  <svg
+    {...props}
+    role="img"
+    viewBox="0 0 10066 7705"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="Speelse schets van twee mensen die samenwerken."
+  >
     <desc>
       Illustratie in de huisstijlkleuren van Frameless. Links staat vrouw met plannen onder haar arm, licht haar in een
       paardenstaart en een blije uitdrukking. Rechts staat een man met donker haar en een snor. Hij heeft een laptop in

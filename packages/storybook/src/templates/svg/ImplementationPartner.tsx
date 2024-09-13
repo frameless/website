@@ -1,8 +1,13 @@
 import { HTMLAttributes } from 'react';
 
 export const ImplementationPartner = (props: HTMLAttributes<HTMLOrSVGElement>) => (
-  <svg {...props} viewBox="0 0 9449 8327" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <title>Speelse schets van een vrouw met haar telefoon in de hand achter een bureau.</title>
+  <svg
+    {...props}
+    viewBox="0 0 9449 8327"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="Speelse schets van een vrouw met haar telefoon in de hand achter een bureau."
+  >
     <desc>
       Illustratie in de huisstijlkleuren van Frameless. Links zit een vrouw met kort zwart haar en een oorbel in, ze
       heeft een pluizige trui aan. Ze zit op een comfortabele bureaustoel met wielen en steekt haar benen voor zich uit.

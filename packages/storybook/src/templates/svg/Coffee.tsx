@@ -1,8 +1,13 @@
 import { HTMLAttributes } from 'react';
 
 export const Coffee = (props: HTMLAttributes<HTMLOrSVGElement>) => (
-  <svg {...props} viewBox="0 0 9523 7353" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <title>Speelse schets van een man met een enorme kop koffie</title>
+  <svg
+    {...props}
+    viewBox="0 0 9523 7353"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="Speelse schets van een man met een enorme kop koffie"
+  >
     <desc>
       Illustratie in de huisstijlkleuren van Frameless. De man kijkt gelukzalig terwijl hij achterover leunt van de
       enorme bak koffie die groter is dan hij. De koffie klotst over de rand en de man steekt zijn linker been uit alsof

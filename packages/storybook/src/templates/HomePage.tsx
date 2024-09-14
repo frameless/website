@@ -13,9 +13,9 @@ import {
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
-import { AccessiblityPartner } from './svg/AccesibilityPartner';
-import { Coffee } from './svg/Coffee';
-import { TechnicalPartner } from './svg/TechnicalPartner';
+import { AccessiblityPartner } from './illustrations/AccesibilityPartner';
+import { Coffee } from './illustrations/Coffee';
+import { TechnicalPartner } from './illustrations/TechnicalPartner';
 
 interface HomePageProps {
   colorScheme?: 'dark' | 'light';
@@ -25,7 +25,7 @@ export const HomePage = ({ colorScheme }: HomePageProps) => (
     className={clsx('utrecht-document--surface', {
       'frameless-theme--dark': colorScheme === 'dark',
       'frameless-theme--light': colorScheme === 'light',
-      'frameless-thmee--media-query': !colorScheme,
+      'frameless-theme--media-query': !colorScheme,
     })}
   >
     <Page>

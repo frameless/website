@@ -1,0 +1,12 @@
+import { ColorItem, ColorPalette, Meta } from "@storybook/blocks";
+import tokens from "../../../../proprietary/design-tokens/figma/figma.tokens.json";
+
+export const baseColors = tokens["brand"]["frameless"]["color"];
+
+<Meta title="Frameless/Color" />
+
+<ColorPalette>
+  {Object.entries(baseColors).map(([key, token]) => (
+    <ColorItem key={key} title={key} colors={[token.value]} />
+  ))}
+</ColorPalette>

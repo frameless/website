@@ -20,7 +20,7 @@ export const PageHeader = ({ Logo, className, menuItems = [], ...restProps }: Pa
         <div className="frameless-page-header__container">
           {Logo}
           {menuItems.length && (
-            <UtrechtFlexWrapFallback flexTarget="nav-list">
+            <UtrechtFlexWrapFallback flexTarget="nav-list" className="frameless-page-header__webcomponent">
               <NavBar appearance="center">
                 <ul role="list" className="utrecht-nav-list" id="nav-list">
                   {menuItems.map(({ label, href }) => (
@@ -30,7 +30,7 @@ export const PageHeader = ({ Logo, className, menuItems = [], ...restProps }: Pa
                   ))}
                 </ul>
               </NavBar>
-              <MobileMenu slot="fallback" menuItems={menuItems} />
+              <MobileMenu slot="fallback" menuItems={menuItems} className="frameless-page-header__mobile-nav" />
             </UtrechtFlexWrapFallback>
           )}
         </div>

@@ -7,3 +7,13 @@
   padding-inline-end: var(--frameless-page-content-padding-inline-end);
   padding-inline-start: var(--frameless-page-content-padding-inline-start);
 }
+
+.frameless-page-header__webcomponent,
+.frameless-page-header__mobile-nav {
+  visibility: hidden;
+}
+
+.hydrated .frameless-page-header__webcomponent,
+.hydrated .frameless-page-header__mobile-nav {
+  visibility: visible;
+}

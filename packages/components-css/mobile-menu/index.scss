@@ -2,3 +2,15 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.frameless-mobile-menu__nav {
+  --utrecht-unordered-list-padding-inline-start: 0;
+  --utrecht-unordered-list-item-padding-inline-start: 0;
+  --utrecht-unordered-list-line-height: 2;
+
+  margin-block-start: 1rem;
+}
+
+.frameless-mobile-menu__nav-list .utrecht-unordered-list__item::marker {
+  content: none;
+}

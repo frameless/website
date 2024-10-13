@@ -4,7 +4,7 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'off',
   },
   reportUnusedDisableDirectives: true,
-  ignorePatterns: ['dist/*'],
+  ignorePatterns: ['dist/*', '**/*.mdx'],
   env: { browser: true, es2020: true, node: true },
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: 'detect' } },
@@ -15,6 +15,7 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:mdx/recommended',
   ],
   parser: '@typescript-eslint/parser',
 };

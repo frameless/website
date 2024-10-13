@@ -30,7 +30,7 @@ export const MobileMenu = ({ className, menuItems = [], ...restProps }: MobileMe
           <nav className="frameless-mobile-menu__nav">
             <UnorderedList className="frameless-mobile-menu__nav-list">
               {menuItems.map(({ label, href }) => (
-                <UnorderedListItem className="frameless-mobile-menu__nav-list-item">
+                <UnorderedListItem className="frameless-mobile-menu__nav-list-item" key={href}>
                   <Link href={href}>{label}</Link>
                 </UnorderedListItem>
               ))}

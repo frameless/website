@@ -1,17 +1,20 @@
 import {
-  Backdrop,
   Button,
   Drawer,
   Link,
   UnorderedList,
   UnorderedListItem,
 } from '@utrecht/component-library-react/dist/css-module';
-import { UtrechtIconClose, UtrechtIconHamburgerMenu, UtrechtSidenav } from '@utrecht/web-component-library-react';
+import { UtrechtIconClose, UtrechtIconHamburgerMenu } from '@utrecht/web-component-library-react';
 import clsx from 'clsx';
 import { HTMLAttributes, useState } from 'react';
 import '@frameless/components-css/mobile-menu/index.scss';
 
-export const MobileMenu = ({ className, ...restProps }: HTMLAttributes<HTMLDivElement>) => {
+interface MobileMenuProps extends HTMLAttributes<HTMLDivElement> {
+  menuItems?: { label: string; href: string }[];
+}
+
+export const MobileMenu = ({ className, menuItems = [], ...restProps }: MobileMenuProps) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -23,21 +26,18 @@ export const MobileMenu = ({ className, ...restProps }: HTMLAttributes<HTMLDivEl
         <Button type="submit" aria-label="Sluit menu" onClick={() => setOpen(false)}>
           <UtrechtIconClose />
         </Button>
-        <UtrechtSidenav>
-          <UnorderedList>
-            <UnorderedListItem>
-              <Link href="/aanpak">Aanpak</Link>
-            </UnorderedListItem>
-            <UnorderedListItem>
-              <Link href="/voorbeelden">Voorbeelden</Link>
-            </UnorderedListItem>
-            <UnorderedListItem>
-              <Link href="/contact">Contact</Link>
-            </UnorderedListItem>
-          </UnorderedList>
-        </UtrechtSidenav>
+        {menuItems.length && (
+          <nav className="frameless-mobile-menu__nav">
+            <UnorderedList className="frameless-mobile-menu__nav-list">
+              {menuItems.map(({ label, href }) => (
+                <UnorderedListItem className="frameless-mobile-menu__nav-list-item">
+                  <Link href={href}>{label}</Link>
+                </UnorderedListItem>
+              ))}
+            </UnorderedList>
+          </nav>
+        )}
       </Drawer>
-      {open && <Backdrop />}
     </div>
   );
 };

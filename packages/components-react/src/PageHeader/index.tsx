@@ -10,25 +10,31 @@ interface PageHeaderProps extends HTMLAttributes<HTMLElement> {
   heading?: string;
   headingLevel?: number;
   Logo: ReactNode;
+  menuItems?: { label: string; href: string }[];
 }
 
-export const PageHeader = ({ Logo, className, ...restProps }: PageHeaderProps) => (
-  <UtrechtPageHeader {...restProps} className={clsx('frameless-page-header', className)}>
-    <PageContent>
-      <div className="frameless-page-header__container">
-        {Logo}
-        <UtrechtFlexWrapFallback flexTarget="nav-list">
-          <NavBar appearance="center">
-            <ul role="list" className="utrecht-nav-list" id="nav-list">
-              <NavListLink href="#aanpak">Aanpak</NavListLink>
-              <NavListLink href="#audits">WCAG Audits</NavListLink>
-              <NavListLink href="#voorbeelden">Voorbeelden</NavListLink>
-              <NavListLink href="#contact">Contact</NavListLink>
-            </ul>
-          </NavBar>
-          <MobileMenu slot="fallback" />
-        </UtrechtFlexWrapFallback>
-      </div>
-    </PageContent>
-  </UtrechtPageHeader>
-);
+export const PageHeader = ({ Logo, className, menuItems = [], ...restProps }: PageHeaderProps) => {
+  return (
+    <UtrechtPageHeader {...restProps} className={clsx('frameless-page-header', className)}>
+      <PageContent>
+        <div className="frameless-page-header__container">
+          {Logo}
+          {menuItems.length && (
+            <UtrechtFlexWrapFallback flexTarget="nav-list">
+              <NavBar appearance="center">
+                <ul role="list" className="utrecht-nav-list" id="nav-list">
+                  {menuItems.map(({ label, href }) => (
+                    <NavListLink href={href} key={href}>
+                      {label}
+                    </NavListLink>
+                  ))}
+                </ul>
+              </NavBar>
+              <MobileMenu slot="fallback" menuItems={menuItems} />
+            </UtrechtFlexWrapFallback>
+          )}
+        </div>
+      </PageContent>
+    </UtrechtPageHeader>
+  );
+};

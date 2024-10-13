@@ -12,8 +12,16 @@ import { customComponents, mapHeadings, omitHeading1 } from '../../src/mdxUtils'
 
 const HomePage = () => (
   <Page>
-    <PageHeader Logo={<Logo />} />
-    <Hero id="hero">
+    <PageHeader
+      Logo={<Logo />}
+      menuItems={[
+        { label: 'Aanpak', href: '#aanpak' },
+        { label: 'WCAG Audits', href: '#audits' },
+        // { label: 'Voorbeelden', href: '#voorbeelden' },
+        { label: 'Contact', href: '#contact' },
+      ]}
+    />
+    <Hero id="partner">
       <TechnischPartner components={mapHeadings(2, customComponents)} />
     </Hero>
     <Section appearance="alternate" id="aanpak">
@@ -27,7 +35,7 @@ const HomePage = () => (
         </ButtonLink>
       </ButtonGroup>
     </Section>
-    <Section>
+    <Section id="audits">
       <AccessiblityPartner components={mapHeadings(2, customComponents)} />
       <Paragraph>Als Frameless ondersteunen wij graag jouw organisatie bij:</Paragraph>
       <CardGroup>
@@ -45,7 +53,7 @@ const HomePage = () => (
         </Card>
       </CardGroup>
     </Section>
-    <Section appearance="alternate">
+    <Section appearance="alternate" id="voorbeelden">
       <Projecten components={omitHeading1(mapHeadings(2, customComponents))} />
       <Paragraph>Hieronder hebben we er een aantal voor je uitgelicht </Paragraph>
       <CardGroup>

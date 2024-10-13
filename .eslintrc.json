@@ -63,7 +63,7 @@
       "files": ["**/stencil.tsx", "**/*.stencil.tsx"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "project": ["packages/web-components-stencil/tsconfig.json"]
+        "parserSerivce": true
       },
       "plugins": ["@typescript-eslint", "import"]
     },
@@ -78,11 +78,7 @@
       "files": ["*.ts", "*.tsx"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "project": [
-          "packages/storybook/tsconfig.json",
-          "packages/components-react/tsconfig.json",
-          "packages/components-react/tsconfig.test.json"
-        ]
+        "parserSerivce": true
       },
       "plugins": ["@typescript-eslint"]
     }

@@ -150,7 +150,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.6.1
         with:
           branch: gh-pages
-          folder: apps/frameless.io/dist/
+          folder: apps/frameless.io/dist/client
 
   publish-npm:
     runs-on: ubuntu-latest

@@ -1,6 +1,12 @@
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
-import { Backdrop, Button, Drawer } from '@utrecht/component-library-react/dist/css-module';
-import { UtrechtIconClose, UtrechtIconHamburgerMenu } from '@utrecht/web-component-library-react';
+import {
+  Backdrop,
+  Button,
+  Drawer,
+  Link,
+  UnorderedList,
+  UnorderedListItem,
+} from '@utrecht/component-library-react/dist/css-module';
+import { UtrechtIconClose, UtrechtIconHamburgerMenu, UtrechtSidenav } from '@utrecht/web-component-library-react';
 import clsx from 'clsx';
 import { HTMLAttributes, useState } from 'react';
 import '@frameless/components-css/mobile-menu/index.scss';
@@ -17,19 +23,19 @@ export const MobileMenu = ({ className, ...restProps }: HTMLAttributes<HTMLDivEl
         <Button type="submit" aria-label="Sluit menu" onClick={() => setOpen(false)}>
           <UtrechtIconClose />
         </Button>
-        <Sidenav>
-          <SidenavList>
-            <SidenavItem>
-              <SidenavLink href="/aanpak">Aanpak</SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/voorbeelden">Voorbeelden</SidenavLink>
-            </SidenavItem>
-            <SidenavItem>
-              <SidenavLink href="/contact">Contact</SidenavLink>
-            </SidenavItem>
-          </SidenavList>
-        </Sidenav>
+        <UtrechtSidenav>
+          <UnorderedList>
+            <UnorderedListItem>
+              <Link href="/aanpak">Aanpak</Link>
+            </UnorderedListItem>
+            <UnorderedListItem>
+              <Link href="/voorbeelden">Voorbeelden</Link>
+            </UnorderedListItem>
+            <UnorderedListItem>
+              <Link href="/contact">Contact</Link>
+            </UnorderedListItem>
+          </UnorderedList>
+        </UtrechtSidenav>
       </Drawer>
       {open && <Backdrop />}
     </div>

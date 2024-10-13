@@ -31,7 +31,7 @@ const HomePage = () => (
       <AccessiblityPartner components={mapHeadings(2, customComponents)} />
       <Paragraph>Als Frameless ondersteunen wij graag jouw organisatie bij:</Paragraph>
       <CardGroup>
-        <Card headingLevel={3} heading="WCAG audit">
+        <Card headingLevel={3} heading="Het uitvoeren van een WCAG audit">
           <Toegankelijkheidsverklaring components={omitHeading1(mapHeadings(3, customComponents))} />
           <Paragraph>Een audit door ons laten doen?</Paragraph>
           <ButtonGroup>
@@ -40,7 +40,7 @@ const HomePage = () => (
             </ButtonLink>
           </ButtonGroup>
         </Card>
-        <Card headingLevel={3} heading="Eigen projecten">
+        <Card headingLevel={3} heading="Toegankelijkheid in onze eigen projecten">
           <WCAGEend components={omitHeading1(mapHeadings(3, customComponents))} />
         </Card>
       </CardGroup>

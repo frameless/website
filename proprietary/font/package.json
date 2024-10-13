@@ -20,9 +20,9 @@
     "url": "git@github.com:frameless/website.git"
   },
   "dependencies": {
-    "@fontsource/fira-sans": "5.0.20"
+    "@fontsource/fira-sans": "5.1.0"
   },
   "devDependencies": {
-    "@fontsource/oswald": "5.0.20"
+    "@fontsource/oswald": "5.1.0"
   }
 }

@@ -1,0 +1,22 @@
+import { ColorItem, ColorPalette, Meta } from "@storybook/blocks";
+import tokens from "../../../../proprietary/design-tokens/figma/figma.tokens.json";
+export const baseColors = tokens["brand"]["frameless"]["color"];
+
+# Color
+
+## Color Palette
+
+<Meta title="Frameless/Color" />
+
+<ColorPalette>
+  <ColorItem title="Black" colors={Object.values(baseColors.green).map(({ value }) => value)} />
+  <ColorItem title="Gray" colors={Object.values(baseColors.gray).map(({ value }) => value)} />
+  <ColorItem title="Petrol" colors={Object.values(baseColors.petrol).map(({ value }) => value)} />
+  <ColorItem title="Sulkingroom" colors={Object.values(baseColors.sulkingroom).map(({ value }) => value)} />
+  <ColorItem title="Rosewood" colors={Object.values(baseColors.rosewood).map(({ value }) => value)} />
+  <ColorItem title="Maroon" colors={Object.values(baseColors.maroon).map(({ value }) => value)} />
+  <ColorItem title="Highlighter" colors={Object.values(baseColors.highlighter).map(({ value }) => value)} />
+  <ColorItem title="Red" colors={Object.values(baseColors.red).map(({ value }) => value)} />
+  <ColorItem title="Orange" colors={Object.values(baseColors.orange).map(({ value }) => value)} />
+  <ColorItem title="Green" colors={Object.values(baseColors.green).map(({ value }) => value)} />
+</ColorPalette>

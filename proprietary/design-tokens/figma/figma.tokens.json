@@ -791,12 +791,12 @@
       },
       "interaction": {
         "color": {
-          "value": "{frameless.color.maroon.30}",
+          "value": "{frameless.color.petrol.20}",
           "type": "color"
         },
         "active": {
           "color": {
-            "value": "{frameless.color.maroon.20}",
+            "value": "{frameless.color.petrol.10}",
             "type": "color"
           },
           "inverse": {
@@ -808,7 +808,7 @@
         },
         "hover": {
           "color": {
-            "value": "{frameless.color.maroon.10}",
+            "value": "{frameless.color.petrol.10}",
             "type": "color"
           },
           "inverse": {

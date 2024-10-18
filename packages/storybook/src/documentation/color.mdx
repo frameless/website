@@ -1,29 +1,30 @@
 import { ColorItem, ColorPalette, Meta } from "@storybook/blocks";
 import tokens from "../../../../proprietary/design-tokens/figma/figma.tokens.json";
-
 export const baseColors = tokens["brand"]["frameless"]["color"];
+
+# Color
+
+## Color Palette
 
 <Meta title="Frameless/Color" />
 
 <ColorPalette>
-  {Object.entries(baseColors).map(([key, token]) => {
+  <ColorItem title="Black" colors={Object.values(baseColors.green).map(({ value }) => value)} />
+  <ColorItem title="Gray" colors={Object.values(baseColors.gray).map(({ value }) => value)} />
+  <ColorItem title="Petrol" colors={Object.values(baseColors.petrol).map(({ value }) => value)} />
+  <ColorItem title="Sulkingroom" colors={Object.values(baseColors.sulkingroom).map(({ value }) => value)} />
+  <ColorItem title="Rosewood" colors={Object.values(baseColors.rosewood).map(({ value }) => value)} />
+  <ColorItem title="Maroon" colors={Object.values(baseColors.maroon).map(({ value }) => value)} />
+  <ColorItem title="Highlighter" colors={Object.values(baseColors.highlighter).map(({ value }) => value)} />
+  <ColorItem title="Red" colors={Object.values(baseColors.red).map(({ value }) => value)} />
+  <ColorItem title="Orange" colors={Object.values(baseColors.orange).map(({ value }) => value)} />
+  <ColorItem title="Green" colors={Object.values(baseColors.green).map(({ value }) => value)} />
+</ColorPalette>
 
-    const colorValues = typeof token === 'object' && token !== null
-      ? Object.entries(token).reduce((acc, [shade, colorData]) => {
-          const value = typeof colorData === 'object' && colorData.value ? colorData.value : colorData;
-          acc[`${key}-${shade}`] = value;
-          return acc;
-        }, {})
-      : { [key]: typeof token === 'object' && token.value ? token.value : token };
-
-    return (
-      <ColorItem
-        key={key}
-        title={key}
-        colors={colorValues}
-      />
-    );
-
-})}
+<ColorPalette>
+  {[baseColors.petrol[1],
+  baseColors.green[1]
+  
+  ]}
 
 </ColorPalette>

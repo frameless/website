@@ -50,6 +50,15 @@
   word-break: break-word;
 }
 
+.utrecht-heading-1,
+.utrecht-heading-2,
+.utrecht-heading-3,
+.utrecht-heading-4,
+.utrecht-heading-5,
+.utrecht-heading-6 {
+  text-wrap: balance;
+}
+
 .utrecht-logo > .frameless-logo-image__svg {
   display: block;
 }

@@ -1,10 +1,8 @@
-import { Document } from '@utrecht/component-library-react/dist/css-module';
+import { Document } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import React from 'react';
 import type { PageContext } from 'vike/types';
 import { PageContextProvider } from './usePageContext';
-import '@frameless/font/src/index.css';
-import '@frameless/design-tokens/dist/index.css';
 import './global.css';
 
 export const Layout = ({ children, pageContext }: { children: React.ReactNode; pageContext: PageContext }) => {

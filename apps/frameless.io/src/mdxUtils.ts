@@ -12,7 +12,7 @@ import {
   OrderedList,
   Paragraph,
   UnorderedList,
-} from '@utrecht/component-library-react/dist/css-module';
+} from '@utrecht/component-library-react';
 
 export const customComponents = {
   code: Code,

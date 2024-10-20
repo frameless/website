@@ -7,5 +7,17 @@
   "keywords": [
     "nl-design-system"
   ],
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "rollup --config ./rollup.config.mjs",
+    "clean": "rimraf dist"
+  },
+  "main": "dist/index.css",
+  "devDependencies": {
+    "postcss": "8.4.47",
+    "postcss-discard-duplicates": "7.0.1",
+    "rimraf": "5.0.10",
+    "rollup": "4.24.0",
+    "rollup-plugin-postcss": "4.0.2"
+  }
 }

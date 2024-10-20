@@ -4,7 +4,6 @@ import clsx from 'clsx';
 import { HTMLAttributes, ReactNode } from 'react';
 import { MobileMenu } from '../MobileMenu';
 import { PageContent } from '../PageContent';
-import '@frameless/components-css/page-header/index.scss';
 
 interface PageHeaderProps extends HTMLAttributes<HTMLElement> {
   heading?: string;

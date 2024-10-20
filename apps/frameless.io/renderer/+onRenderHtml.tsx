@@ -30,6 +30,9 @@ export const onRenderHtml: OnRenderHtmlAsync = async (pageContext): ReturnType<O
         <link rel="icon" href="${logoUrl}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${desc}" />
+        <link rel="preload" as="font" href="/font/fira-sans-latin-400-normal.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="/font/fira-sans-latin-600-normal.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="/font/oswald-latin-400-normal.woff2" type="font/woff2" crossorigin="anonymous">
         <title>${title}</title>
       </head>
       <body class="frameless-theme">

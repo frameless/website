@@ -8,7 +8,6 @@ import {
 import { UtrechtIconClose, UtrechtIconHamburgerMenu } from '@utrecht/web-component-library-react';
 import clsx from 'clsx';
 import { HTMLAttributes, useState } from 'react';
-import '@frameless/components-css/mobile-menu/index.scss';
 
 interface MobileMenuProps extends HTMLAttributes<HTMLDivElement> {
   menuItems?: { label: string; href: string }[];

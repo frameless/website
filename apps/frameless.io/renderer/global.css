@@ -1,3 +1,38 @@
+@import "@frameless/design-tokens/dist/index.css";
+@import "@utrecht/component-library-css/dist/index.css";
+@import "@frameless/components-css/dist/index.css";
+
+@font-face {
+  font-display: swap;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Fira Sans"),
+    url("/font/fira-sans-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+000-5FF; /*  Downloads only latin glyphs */
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("Firava"),
+    url("/font/fira-sans-latin-600-normal.woff2") format("woff2");
+  unicode-range: U+000-5FF; /* Downloads only latin glyphs */
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/oswald-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+000-5FF; /* Downloads only latin glyphs */
+}
+
 .frameless-theme {
   --utrecht-space-around: 1;
   --frameless-illustration-color: #122529;
@@ -5,6 +40,18 @@
   --frameless-illustration-floor-color: #a9c7cb;
   --frameless-illustration-background-detail-color: #295960;
   --frameless-illustration-detail-color: #51929a;
+  --utrecht-logo-min-block-size: auto;
+  --utrecht-logo-min-inline-size: 42px;
+
+  hyphenate-limit-chars: 12 8 4;
+  hyphenate-limit-lines: 2;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.utrecht-logo > .frameless-logo-image__svg {
+  display: block;
 }
 
 .utrecht-paragraph:last-child {
@@ -20,7 +67,7 @@
 }
 
 details[open] summary {
-  margin-block-end: 24px;
+  margin-block-end: 1.5rem;
 }
 
 .utrecht-img {
@@ -28,9 +75,9 @@ details[open] summary {
 }
 
 .frameless-illustration {
-  inline-size: 22rem;
-  padding-block-end: 24px;
-  padding-block-start: 24px;
+  max-inline-size: 22rem;
+  padding-block-end: 1.5rem;
+  padding-block-start: 1.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,5 +116,37 @@ details[open] summary {
       padding-inline-end: 16px;
       padding-inline-start: 16px;
     }
+  }
+}
+
+@media screen and (width <= 400px) {
+  .frameless-theme {
+    --frameless-logo-text-font-size: 2rem;
+    --utrecht-heading-2-font-size: 1.5rem;
+    --utrecht-heading-3-font-size: 1.4rem;
+    --utrecht-heading-4-font-size: 1.3rem;
+    --utrecht-heading-5-font-size: 1.2rem;
+    --utrecht-heading-6-font-size: 1rem;
+    --utrecht-logo-min-inline-size: 32px;
+    --frameless-logo-wrapper-gap: 1ch;
+  }
+}
+
+@media screen and (width <= 350px) {
+  .frameless-theme {
+    --frameless-logo-wrapper-flex-direction: column;
+    --frameless-logo-wrapper-gap: 1ch;
+  }
+
+  .frameless-logo__wrapper .utrecht-logo {
+    display: none;
+  }
+}
+
+@media screen and (width <= 300px) {
+  .frameless-page-header__container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
   }
 }

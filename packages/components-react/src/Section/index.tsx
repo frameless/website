@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { HTMLAttributes, PropsWithChildren } from 'react';
-import '@frameless/components-css/section/index.scss';
 import { PageContent } from '../PageContent';
 
 interface SectionProps extends HTMLAttributes<HTMLElement> {

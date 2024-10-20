@@ -1,5 +1,6 @@
 import '@frameless/design-tokens/dist/index.css';
 import '@frameless/font/src/index.css';
+import '@frameless/components-css/index.scss';
 import type { Preview } from '@storybook/react';
 import { ParametersArgsDecorator } from './ParametersArgsDecorator';
 

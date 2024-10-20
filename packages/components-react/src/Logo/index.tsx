@@ -1,7 +1,7 @@
 // Logo component is imported from Utrecht
 // LogoImage, LogoText and LogoWrapper are Frameless components
 
-import { Logo as UtrechtLogo } from '@utrecht/component-library-react/dist/css-module';
+import { Logo as UtrechtLogo } from '@utrecht/component-library-react';
 import { HTMLAttributes } from 'react';
 import { LogoImage } from './LogoImage';
 import { LogoText } from './LogoText';

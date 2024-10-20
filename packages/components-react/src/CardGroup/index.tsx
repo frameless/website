@@ -1,7 +1,5 @@
 import clsx from 'clsx';
 import { ForwardedRef, forwardRef, HTMLAttributes, PropsWithChildren } from 'react';
-import '@frameless/components-css/card-group/index.scss';
-import '@frameless/components-css/card/index.scss';
 
 export type CardGroupProps = HTMLAttributes<HTMLDivElement>;
 

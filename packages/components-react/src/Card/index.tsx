@@ -1,7 +1,6 @@
 import { Heading } from '@utrecht/component-library-react';
 import clsx from 'clsx';
 import { HTMLAttributes, PropsWithChildren, ReactNode } from 'react';
-import '@frameless/components-css/card/index.scss';
 
 interface CardProps extends HTMLAttributes<HTMLElement> {
   heading?: string;

@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { HTMLAttributes, PropsWithChildren } from 'react';
-import '@frameless/components-css/page-content/index.scss';
 
 interface PageContentProps extends HTMLAttributes<HTMLElement> {
   heading?: string;

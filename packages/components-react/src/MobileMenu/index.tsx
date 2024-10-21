@@ -18,11 +18,16 @@ export const MobileMenu = ({ className, menuItems = [], ...restProps }: MobileMe
 
   return (
     <div className={clsx(className, 'frameless-mobile-menu')} {...restProps}>
-      <Button onClick={() => setOpen(true)} aria-label="Open menu">
+      <Button onClick={() => setOpen(true)} aria-label="Open menu" appearance="secondary-action-button">
         <UtrechtIconHamburgerMenu />
       </Button>
       <Drawer open={open} align="inline-end">
-        <Button type="submit" aria-label="Sluit menu" onClick={() => setOpen(false)}>
+        <Button
+          appearance="secondary-action-button"
+          type="submit"
+          aria-label="Sluit menu"
+          onClick={() => setOpen(false)}
+        >
           <UtrechtIconClose />
         </Button>
         {menuItems.length && (

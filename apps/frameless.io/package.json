@@ -18,7 +18,7 @@
     "dev": "pnpm run server:dev",
     "prod": "pnpm run lint && pnpm run build && pnpm run server:prod",
     "build": "vite build",
-    "purgecss": "purgecss --css 'dist/client/assets/static/*.css' --content dist/client/index.html 'dist/client/assets/**/*.js' --variables --output 'dist/client/assets/static'",
+    "purgecss": "purgecss --css 'dist/client/assets/static/*.css' --content dist/client/index.html 'dist/client/assets/**/*.js' --output 'dist/client/assets/static'",
     "postbuild": "pnpm run purgecss && precompress --exclude '**.woff2' --types br --verbose dist/client/",
     "server": "tsx ./server/index.ts",
     "server:dev": "pnpm run server",

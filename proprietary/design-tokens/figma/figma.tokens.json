@@ -791,12 +791,12 @@
       },
       "interaction": {
         "color": {
-          "value": "{frameless.color.maroon.30}",
+          "value": "{frameless.color.petrol.20}",
           "type": "color"
         },
         "active": {
           "color": {
-            "value": "{frameless.color.maroon.20}",
+            "value": "{frameless.color.petrol.30}",
             "type": "color"
           },
           "inverse": {
@@ -808,7 +808,7 @@
         },
         "hover": {
           "color": {
-            "value": "{frameless.color.maroon.10}",
+            "value": "{frameless.color.petrol.40}",
             "type": "color"
           },
           "inverse": {
@@ -820,7 +820,7 @@
         },
         "inverse": {
           "color": {
-            "value": "{utrecht.document.background-color}",
+            "value": "{frameless.color.white}",
             "type": "color"
           }
         }
@@ -1795,7 +1795,7 @@
           "hover": {
             "background-color": {
               "type": "color",
-              "value": "{frameless.color.gray.90}"
+              "value": "{utrecht.interaction.hover.inverse.color}"
             },
             "border-color": {
               "type": "color",
